@@ -1,0 +1,158 @@
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  min-height: 100vh;
+  background: rgb(2, 24, 89, 1);
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
+.col {
+  flex-basis: 33.333333%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+.logo svg {
+  width: 112px;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 64px;
+}
+
+section h1 {
+  font-size: 56px;
+  font-weight: 200;
+  color: #fff;
+  margin: 0 0 64px;
+  text-align: center;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-header {
+  display: block;
+  background: linear-gradient(
+    133deg,
+    rgba(11, 158, 217, 1) 0%,
+    rgba(4, 51, 191, 1) 100%
+  );
+  padding: 56px 48px;
+  text-decoration: none;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 19px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #fff;
+}
+
+.card-body {
+  height: calc(100% - 136px - 52px);
+  padding: 20px 16px;
+  background: floralwhite;
+  color: rgb(2, 24, 89, 1);
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.card-body p {
+  margin: 0;
+}
+
+.card-footer {
+  background: floralwhite;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 0 16px 16px;
+  display: flex;
+}
+
+.card-footer .btn {
+  margin-right: 16px;
+}
+
+.btn {
+  display: inline-block;
+  background: rgba(11, 158, 217, 1);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 24px;
+  border-radius: 4px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(4, 51, 191, 1);
+}
+
+@media (max-width: 991px) {
+  section {
+    padding-top: 54px;
+  }
+  section h1,
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .card {
+    height: auto;
+    margin-bottom: 32px;
+  }
+
+  .card-body {
+    height: auto;
+  }
+
+  .logo {
+    padding: 16px;
+  }
+}
