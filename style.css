@@ -28,14 +28,14 @@ p {
 .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin-left: -16px;
   margin-right: -16px;
 }
 
 .col {
   flex-basis: 33.333333%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 16px;
 }
 
 .logo {
@@ -60,7 +60,7 @@ section h1 {
   font-size: 56px;
   font-weight: 200;
   color: #fff;
-  margin: 0 0 64px;
+  margin: 0 0 48px;
   text-align: center;
 }
 
@@ -121,6 +121,11 @@ section h1 {
   border-radius: 4px;
   user-select: none;
   cursor: pointer;
+}
+
+.btn span {
+  position: relative;
+  top: -1px;
 }
 
 .btn:hover {

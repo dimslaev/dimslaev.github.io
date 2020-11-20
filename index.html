@@ -51,25 +51,31 @@
       const itemsRow = document.querySelector("#items");
       const data = [
         {
+          name: "OverflowTabs.jsx",
+          desc: "Nicely overflowing tabs navigation for React.",
+          demo: "https://q9ut3.csb.app/",
+          repo: "https://github.com/dimslaev/overflow-tabs/tree/master/src",
+        },
+        {
           name: "Wheeler.js",
           desc:
             "Perform custom animations depending on wheel count and direction.",
           demo: "https://dimslaev.github.io/wheeler/example/",
-          repo: "https://github.com/dimslaev/wheeler",
+          repo:
+            "https://github.com/dimslaev/wheeler/blob/master/src/wheeler.js",
         },
         {
           name: "SmoothScrollTo.js",
-          desc:
-            "Smooth scroll to section in pure JS with custom easing and duration.",
-          demo: "https://dimslaev.github.io/smooth-scroll-to/demo",
-          repo: "https://github.com/dimslaev/smooth-scroll-to",
+          desc: "Pure JS smooth scrolling for modern browsers.",
+          // demo: "https://dimslaev.github.io/smooth-scroll-to/demo",
+          repo: "https://github.com/dimslaev/smooth-scroll-to/tree/master/src",
         },
-        {
-          name: "ReactSVGIcon.js",
-          desc: "A great way to manage custom SVG icons in React.",
-          demo: "https://codesandbox.io/s/react-svg-icon-7i7p0",
-          repo: "https://codesandbox.io/s/react-svg-icon-7i7p0",
-        },
+        // {
+        //   name: "ReactSVGIcon.js",
+        //   desc: "A great way to manage custom SVG icons in React.",
+        //   demo: "https://codesandbox.io/s/react-svg-icon-7i7p0",
+        //   repo: "https://codesandbox.io/s/react-svg-icon-7i7p0",
+        // },
       ];
 
       const template = ({ name, desc, demo, repo }) => `
@@ -84,12 +90,22 @@
               </p>
             </div>
             <div class="card-footer">
+              ${
+                demo
+                  ? ` 
               <a class="btn" href="${demo}" target="_blank">
-                Demo
-              </a>
+                <span>Demo</span>
+              </a>`
+                  : ""
+              }
+              ${
+                repo
+                  ? ` 
               <a class="btn" href="${repo}" target="_blank">
-                Repo
-              </a>
+                <span>Source</span>
+              </a>`
+                  : ""
+              }
             </div>
           </div>
         </div>`;
