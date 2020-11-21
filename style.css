@@ -98,6 +98,8 @@ section h1 {
 
 .card-body p {
   margin: 0;
+  height: 40px;
+  line-height: 20px;
 }
 
 .card-footer {
