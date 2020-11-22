@@ -34,7 +34,8 @@ p {
 }
 
 .col {
-  flex-basis: 33.333333%;
+  flex-basis: 33.3333%;
+  min-width: 33.3333%;
   padding: 16px;
 }
 
