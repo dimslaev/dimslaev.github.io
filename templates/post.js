@@ -1,23 +1,17 @@
-import { createHeaderHtml } from "./header.js";
+import { createHeadHtml } from "./head.js";
+import { createFooterHtml } from "./footer.js";
 
-export const createPostHtml = ({ meta = "", body = "" }) => `
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-          <title>${meta.title}</title>
-          <meta name="description" content="${meta.description}">
-          <link rel="stylesheet" href="../../style.css">
-      </head>
-      <body>
-          <div class="post">
-            <header class="post-header"> 
-              ${createHeaderHtml(meta)}
-            </header>
-            <div class="post-content">
-              ${body}
-            </div> 
-          </div> 
-      </body>
-      </html>`;
+export const createPostHtml = ({ meta = {}, body = "" }) => `
+  ${createHeadHtml({ meta })}
+      <article class="post">
+        <header class="post-header"> 
+          <h1>${meta.title}</h1> 
+          <p>${new Date(Date.parse(meta.published)).toLocaleDateString(
+            "en-GB"
+          )}</p> 
+        </header>
+        <div class="post-content">
+          ${body}
+        </div> 
+      </article> 
+  ${createFooterHtml({ meta })}`;

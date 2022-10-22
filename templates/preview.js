@@ -1,8 +1,9 @@
-import { createHeaderHtml } from "./header.js";
-
 export const createPreviewHtml = ({ meta }) => `
-    <div class="preview">
-    <header class="preview-header"> 
-        ${createHeaderHtml(meta)}
-    </header>
-    </div>`;
+    <article class="preview">
+        <header class="post-header"> 
+        <h1>${meta.title}</h1> 
+        <p>${new Date(Date.parse(meta.published)).toLocaleDateString(
+          "en-GB"
+        )}</p> 
+        </header>
+    </article>`;

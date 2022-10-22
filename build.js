@@ -1,7 +1,9 @@
 import fs from "fs";
 import { markdown } from "./utils/markdown.js";
 import { createPostHtml } from "./templates/post.js";
+import { createHomeHtml } from "./templates/home.js";
 import { createPreviewHtml } from "./templates/preview.js";
+
 import { minify } from "html-minifier";
 
 const options = {
@@ -38,20 +40,26 @@ const buildPosts = async (dir) => {
 };
 
 const buildPreviews = (dir) => {
-  const postDirs = fs
-    .readdirSync(dir)
-    .sort((a, b) => Date.parse(a.published) - Date.parse(b.published));
+  const postDirs = fs.readdirSync(dir);
+  const previews = postDirs
+    .filter((postDir) => !postDir.startsWith("."))
+    .map((postDir) => getPostMeta(`${dir}/${postDir}`))
+    .sort((a, b) => {
+      return Date.parse(b.published) - Date.parse(a.published);
+    });
 
-  let previewsHtml = "";
-  for (let postDir of postDirs) {
-    if (postDir.startsWith(".")) continue;
-    postDir = dir + "/" + postDir;
-    const meta = getPostMeta(postDir);
-    console.log(meta);
-    previewsHtml += createPreviewHtml({ meta });
-  }
+  return previews.reduce((prev, curr) => {
+    prev += createPreviewHtml({ meta: curr });
+    return prev;
+  }, "");
+};
 
-  fs.writeFileSync("./previews.html", previewsHtml, "utf8");
+const buildHome = () => {
+  const previewsHtml = buildPreviews("./posts");
+  const homeJson = getPostMeta(".");
+  const homepage = createHomeHtml({ meta: homeJson, posts: previewsHtml });
+
+  fs.writeFileSync("./index.html", homepage, "utf8");
 };
 
 (async function () {
@@ -59,7 +67,7 @@ const buildPreviews = (dir) => {
 
   await buildPosts("./posts");
 
-  buildPreviews("./posts");
+  buildHome();
 
   console.log("Done");
 })();
