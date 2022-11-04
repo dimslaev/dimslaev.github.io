@@ -2,5 +2,6 @@
   "title": "New title 2",
   "description": "description 2",
   "published": "2022-10-17",
-  "tags": "tag1, tag2"
+  "tags": "tag1, tag2",
+  "href": "https://external-link"
 }

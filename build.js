@@ -3,7 +3,6 @@ import { markdown } from "./utils/markdown.js";
 import { createPostHtml } from "./templates/post.js";
 import { createHomeHtml } from "./templates/home.js";
 import { createPreviewHtml } from "./templates/preview.js";
-
 import { minify } from "html-minifier";
 
 const options = {
@@ -43,13 +42,14 @@ const buildPreviews = (dir) => {
   const postDirs = fs.readdirSync(dir);
   const previews = postDirs
     .filter((postDir) => !postDir.startsWith("."))
-    .map((postDir) => getPostMeta(`${dir}/${postDir}`))
+    .map((postDir) => ({ ...getPostMeta(`${dir}/${postDir}`), href: postDir, target: '_self' }))
     .sort((a, b) => {
       return Date.parse(b.published) - Date.parse(a.published);
     });
 
   return previews.reduce((prev, curr) => {
-    prev += createPreviewHtml({ meta: curr });
+    const link = curr.href ? {href: curr.href, target: "_blank"} : 
+    prev += createPreviewHtml({ meta: curr, link,  });
     return prev;
   }, "");
 };
