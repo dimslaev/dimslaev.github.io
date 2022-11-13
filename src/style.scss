@@ -1,0 +1,130 @@
+@use "sass:math";
+
+$fi: 1.618;
+$fiWidth: 90vw;
+$fiHeight: math.div($fiWidth, $fi);
+$fiSequenceMax: 89;
+
+@function fiSize($n) {
+  @return math.div($fiWidth, $fiSequenceMax) * $n;
+}
+
+@mixin classes($prefix, $rule) {
+  @for $i from 1 through $fiSequenceMax {
+    .#{$prefix}-#{$i} {
+      #{$rule}: fiSize($i);
+    }
+  }
+}
+
+@include classes("w", "width");
+@include classes("h", "height");
+@include classes("m", "margin");
+@include classes("mt", "margin-top");
+@include classes("mb", "margin-bottom");
+@include classes("ml", "margin-left");
+@include classes("mr", "margin-right");
+@include classes("p", "padding");
+@include classes("pt", "padding-top");
+@include classes("pb", "padding-bottom");
+@include classes("pl", "padding-left");
+@include classes("pr", "padding-right");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Lekton", sans-serif;
+}
+
+#container {
+  width: $fiWidth;
+  position: relative;
+  padding: fiSize(13);
+
+  &:before {
+    content: "";
+    width: 1px;
+    position: fixed;
+    left: fiSize(23.5);
+    top: 0;
+    bottom: 0;
+    background: blue;
+  }
+}
+
+.post {
+  width: 100%;
+  margin-bottom: fiSize(13);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  .circle {
+    width: fiSize(21);
+    height: fiSize(21);
+
+    border: 1px solid blue;
+    background-color: #000;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 50%;
+    //   border-left: 1px solid;
+    // }
+
+    .text {
+      font-size: fiSize(5);
+    }
+  }
+
+  .text {
+    h3 {
+      font-size: fiSize(3);
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: fiSize(1);
+    }
+  }
+
+  .tags {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-size: fiSize(1);
+      padding: fiSize(1);
+      background: blue;
+      color: white;
+      border-radius: fiSize(1);
+      + li {
+        margin-left: fiSize(1);
+      }
+    }
+  }
+}
+
+button {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
