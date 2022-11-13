@@ -534,7 +534,8 @@ function hmrAcceptRun(bundle, id) {
 },{}],"bNKaB":[function(require,module,exports) {
 gsap.registerPlugin(ScrollTrigger);
 // gsap.to(window, { duration: 2, scrollTo: 10 });
-const items = gsap.utils.toArray("#container > *");
+const items = gsap.utils.toArray(".post");
+console.log(gsap);
 const itemWidth = items[0].querySelector(".circle").offsetWidth;
 const timeline = gsap.timeline({
     paused: true
