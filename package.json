@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "itemsjs": "^2.1.20"
+  },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.8.0",
     "@parcel/transformer-sass": "^2.8.0",
