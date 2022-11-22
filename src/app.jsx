@@ -1,6 +1,15 @@
 import React from "react";
 import itemsJsPackage from "itemsjs";
 import data from "./data.json";
+import { AppContainer } from "./components/AppContainer";
+import {
+  PageContainer,
+  PageSidebar,
+  PageContent,
+} from "./components/PageContainer";
+import { ItemsList } from "./components/ItemsList";
+import { SearchBar } from "./components/SearchBar";
+import { Tags } from "./components/Tags";
 
 const itemsJsConfig = {
   sortings: {
@@ -16,40 +25,97 @@ const itemsJsConfig = {
       conjunction: false,
     },
   },
-  searchableFields: ["name", "tags"],
+  searchableFields: ["title"],
+};
+
+const PER_PAGE = 10;
+
+const DEFAULT_SEARCH = {
+  per_page: PER_PAGE,
+  sort: "title_asc",
 };
 
 export const App = () => {
   const [items, setItems] = React.useState([]);
+  const [search, setSearch] = React.useState("");
+  const [tags, setTags] = React.useState([]);
+  const [selectedTags, setSelectedTags] = React.useState([]);
   const { current: itemsJS } = React.useRef(
     itemsJsPackage(data, itemsJsConfig)
   );
-  const listRef = React.useRef();
+
+  // React.useEffect(() => {
+  //   if (!itemsJS) return;
+
+  //   const query = itemsJS.search({
+  //     ...DEFAULT_SEARCH,
+  //     // full text search
+  //     // query: 'forrest gump',
+  //     // filters: {
+  //     //   tags: ["tag 1"],
+  //     // },
+  //   });
+
+  //   setItems(query.data.items);
+  // }, [itemsJS.current]);
 
   React.useEffect(() => {
     if (!itemsJS) return;
 
     const query = itemsJS.search({
-      per_page: 4,
-      sort: "title_asc",
-      // full text search
-      // query: 'forrest gump',
-      // filters: {
-      //   tags: ["tag 1"],
-      // },
+      ...DEFAULT_SEARCH,
+      query: search || undefined,
+      filters: {
+        tags: selectedTags,
+      },
     });
 
+    console.log(search);
+
     setItems(query.data.items);
-  }, [itemsJS.current]);
+  }, [search, selectedTags.length]);
+
+  React.useEffect(() => {
+    if (!itemsJS) return;
+
+    const query = itemsJS.aggregation({
+      name: "tags",
+      per_page: 100,
+      query: search,
+    });
+
+    setTags(query.data.buckets);
+  }, [search]);
+
+  const onSelectTag = (tag) => {
+    if (selectedTags.includes(tag)) {
+      setSelectedTags(selectedTags.filter((it) => it !== tag));
+    } else {
+      setSelectedTags([...selectedTags, tag]);
+    }
+  };
+
+  const clearTags = () => {
+    setSelectedTags([]);
+  };
 
   return (
-    <main>
-      <ul className="list" ref={listRef}>
-        {items.map((item, i) => (
-          <li key={`item-${i}`}>{item.title}</li>
-        ))}
-      </ul>
-    </main>
+    <AppContainer>
+      <PageContainer>
+        <PageSidebar>
+          <SearchBar search={search} setSearch={setSearch} />
+          <Tags
+            tags={tags}
+            selectedTags={selectedTags}
+            onSelectTag={onSelectTag}
+            clearTags={clearTags}
+          />
+        </PageSidebar>
+        <PageContent>
+          <ItemsList items={items} />
+        </PageContent>
+      </PageContainer>
+    </AppContainer>
   );
 };
 
