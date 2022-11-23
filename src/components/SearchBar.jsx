@@ -43,6 +43,7 @@ export const SearchBar = ({ search, setSearch }) => {
       placeholder="Search"
       onChange={onChange}
       value={searchTerm}
+      size="sm"
       endDecorator={
         searchTerm && (
           <IconButton

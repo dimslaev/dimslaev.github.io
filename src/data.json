@@ -1,288 +1,40 @@
 [
   {
-    "title": "Reconciliation – React",
-    "url": "https://reactjs.org/docs/reconciliation.html",
-    "tags": ["React", "Reconcilliation"]
-  },
-  {
-    "title": "Inside Fiber: in-depth overview of the new reconciliation algorithm in React - React INDEPTH",
-    "url": "https://indepth.dev/inside-fiber-in-depth-overview-of-the-new-reconciliation-algorithm-in-react/",
-    "tags": ["React", "Reconcilliation"]
-  },
-  {
-    "title": "Algorithm React uses to update the view. Increasing the performance",
-    "url": "https://wanago.io/2019/07/08/algorithm-react-update-the-view-increasing-the-performance/",
-    "tags": ["React", "Reconcilliation"]
-  },
-  {
-    "title": "How React Reconciliation Works | CSS-Tricks",
-    "url": "https://css-tricks.com/how-react-reconciliation-works/",
-    "tags": ["React", "Reconcilliation"]
-  },
-  {
-    "title": "useCallback vs useMemo. What is the difference between… | by Jan Hesters | Medium",
-    "url": "https://medium.com/@jan.hesters/usecallback-vs-usememo-c23ad1dc60",
-    "tags": ["React", "Hooks"]
-  },
-  {
-    "title": "When to use React useRef and useLayoutEffect vs useEffect",
-    "url": "https://blog.linguinecode.com/post/when-to-use-useref-and-uselayouteffect",
-    "tags": ["React", "Hooks"]
-  },
-  {
-    "title": "Understanding the useEffect hook in React. Designing custom hooks",
-    "url": "https://wanago.io/2019/11/18/useeffect-hook-in-react-custom-hooks/",
-    "tags": ["React", "Hooks"]
-  },
-  {
-    "title": "Refactoring Higher-Order Components (HOC) to React Hooks - DEV",
-    "url": "https://dev.to/gethackteam/from-higher-order-components-hoc-to-react-hooks-2bm9",
-    "tags": ["React", "Hooks"]
-  },
-  {
-    "title": "The Facade pattern and applying it to React Hooks",
-    "url": "https://wanago.io/2019/12/09/javascript-design-patterns-facade-react-hooks/",
-    "tags": ["React", "Hooks"]
-  },
-  {
     "title": "When Context Replaces Redux",
     "url": "https://frontarm.com/james-k-nelson/when-context-replaces-redux/",
-    "tags": ["React", "Redux"]
+    "tags": ["React", "Redux", "Hooks"],
+    "description": "Redux has used React's context API from the beginning. So how can context replace Redux?"
   },
   {
     "title": "React context and performance",
     "url": "https://frontarm.com/james-k-nelson/react-context-performance/",
-    "tags": ["React", "Redux"]
+    "tags": ["React", "Redux", "Hooks"],
+    "description": "Before you replace Redux's provider component with React's new context API, there's a thing or two that you should know about performance"
   },
   {
-    "title": "Utilities",
-    "url": "https://use-gesture.netlify.com/docs/utilities",
-    "tags": ["React", "EcoSystem"]
+    "title": "JavaScript Tutorials by Expert Authors",
+    "url": "https://www.pluralsight.com/browse/software-development/javascript",
+    "tags": ["Javascript", "ES6"],
+    "description": "50% OFF Personal Annual and Premium subscriptions for a limited time! Learn JavaScript with the help of Pluralsight's online tutorials and courses. Learn everything from JS fundamentals to advanced Javascript techniques for pro coders."
   },
   {
-    "title": "Why use React-use-gesture",
-    "url": "https://use-gesture.netlify.com/docs/motivation",
-    "tags": ["React", "EcoSystem"]
-  },
-  {
-    "title": "Leaky Components - Charisol Community - Medium",
-    "url": "https://medium.com/charisol-community/leaky-components-446dec290cb4",
-    "tags": ["React", "Optimisation"]
-  },
-  {
-    "title": "React Function Components by Example - RWieruch",
-    "url": "https://www.robinwieruch.de/react-function-component#react-arrow-function-component",
-    "tags": ["React"]
-  },
-  {
-    "title": "getify/You-Dont-Know-JS: A book series on JavaScript. @YDKJS on twitter.",
-    "url": "https://github.com/getify/You-Dont-Know-JS",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Understanding \"This\" in JavaScript | Codementor",
-    "url": "https://www.codementor.io/dariogarciamoya/understanding--this--in-javascript-du1084lyn",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Understanding \"this\" in javascript with arrow functions | Codementor",
-    "url": "https://www.codementor.io/dariogarciamoya/understanding-this-in-javascript-with-arrow-functions-gcpjwfyuc",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Learn immutability with JavaScript - Cristian Salcescu - Medium",
-    "url": "https://medium.com/@cristiansalcescu/learn-immutability-with-javascript-6a67e4a48d7f#targetText=Immutability%20makes%20code%20easier%20to,reduce%20the%20area%20of%20surprise.",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Concepts of Functional Programming in Javascript - The Renaissance Developer - Medium",
-    "url": "https://medium.com/the-renaissance-developer/concepts-of-functional-programming-in-javascript-6bc84220d2aa",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Prototypes in JavaScript - Better Programming - Medium",
-    "url": "https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b#targetText=When%20a%20function%20is%20created,prototype%20object%20is%20a%20property.",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Use Cases for JavaScript's IIFEs — Marius Schulz",
-    "url": "https://mariusschulz.com/blog/use-cases-for-javascripts-iifes",
-    "tags": ["Javascript"]
+    "title": "useCallback vs useMemo. What is the difference between",
+    "url": "https://medium.com/@jan.hesters/usecallback-vs-usememo-c23ad1dc60",
+    "tags": ["React", "Hooks", "Pinned"],
+    "description": "What is the difference between useCallBack and useMemo? And why do useMemo and useCallback expect a function? If you’ve worked with React Hooks, you might have asked yourself these questions. Note…",
+    "date": "2021-12-10T06:22:46.018Z"
   },
   {
     "title": "Master the JavaScript Interview: What is Functional Programming?",
     "url": "https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0",
-    "tags": ["Javascript"]
+    "tags": ["Javascript", "Functional Programming"],
+    "description": "Functional programming has become a really hot topic in the JavaScript world. Just a few years ago, few JavaScript programmers even knew what functional programming is, but every large application…",
+    "date": "2021-08-24T22:15:15.784Z"
   },
   {
-    "title": "ES6 for Everyone — The best way to learn modern ES6 JavaScript",
-    "url": "https://es6.io/",
-    "tags": ["Javascript", "ES6"]
-  },
-  {
-    "title": "JavaScript Tutorials by Expert Authors | Pluralsight",
-    "url": "https://www.pluralsight.com/browse/software-development/javascript",
-    "tags": ["Javascript", "ES6"]
-  },
-  {
-    "title": "Discrete Mathematics with Applications: Susanna S. Epp: 9780495391326: Amazon.com: Books",
-    "url": "https://www.amazon.com/Discrete-Mathematics-Applications-Susanna-Epp/dp/0495391328",
-    "tags": ["Javascript", "ES6"]
-  },
-  {
-    "title": "Using ES6 modules today",
-    "url": "https://ferdychristant.com/using-es6-modules-today-734a347d80a7",
-    "tags": ["Javascript", "ES6"]
-  },
-  {
-    "title": "JS Callbacks to Promises – Sam Thorogood – Medium",
-    "url": "https://medium.com/@samthor/js-callbacks-to-promises-541adc46c07c",
-    "tags": ["Javascript", "ES6"]
-  },
-  {
-    "title": "The anatomy of a vanilla JavaScript plugin | Go Make Things",
-    "url": "https://gomakethings.com/the-anatomy-of-a-vanilla-javascript-plugin/",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Please call it prototypal delegation...",
-    "url": "https://www.codingame.com/playgrounds/7075/please-call-it-prototypal-delegation---",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "javascript - How to define private variables with behavior delegation (OLOO) in JS? - Stack Overflow",
-    "url": "https://stackoverflow.com/questions/42611606/how-to-define-private-variables-with-behavior-delegation-oloo-in-js",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Fun with Stamps. Episode 1. Stamp basics - Vasyl Boroviak - Medium",
-    "url": "https://medium.com/@koresar/fun-with-stamps-episode-1-stamp-basics-e0627d81efe0",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "RxJS - Observable",
-    "url": "https://rxjs-dev.firebaseapp.com/guide/observable",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "The Observer Pattern in JavaScript explained | pawelgrzybek.com",
-    "url": "https://pawelgrzybek.com/the-observer-pattern-in-javascript-explained/",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Learning JavaScript Design Patterns",
-    "url": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "MostlyAdequate/mostly-adequate-guide: Mostly adequate guide to FP (in javascript)",
-    "url": "https://github.com/MostlyAdequate/mostly-adequate-guide",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "Write better JavaScript, function composition with pipe and compose | by Filippo Rivolta | ITNEXT",
-    "url": "https://itnext.io/write-better-javascript-function-composition-with-pipe-and-compose-93cc39ab16ee",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "javascript - How does browser page lifecycle sequence work? - Stack Overflow",
-    "url": "https://stackoverflow.com/questions/44044956/how-does-browser-page-lifecycle-sequence-work",
-    "tags": ["Javascript"]
-  },
-  {
-    "title": "When to use Type Aliases or Interfaces in TypeScript | Building SPAs",
-    "url": "https://www.carlrippon.com/when-to-use-type-aliases-v-interfaces/",
-    "tags": ["Typescript"]
-  },
-  {
-    "title": "What is TypeScript? | Learn TypeScript",
-    "url": "https://learntypescript.dev/01/l1-what-is-ts",
-    "tags": ["Typescript"]
-  },
-  {
-    "title": "Setup TypeScript with React | React TypeScript Cheatsheets",
-    "url": "https://react-typescript-cheatsheet.netlify.app/docs/basic/setup",
-    "tags": ["Typescript"]
-  },
-  {
-    "title": "Toggle button React component - Material UI",
-    "url": "https://mui.com/material-ui/react-toggle-button/",
-    "tags": ["Typescript"]
-  },
-  {
-    "title": "Overreacted — A blog by Dan Abramov",
-    "url": "https://overreacted.io/",
-    "tags": ["Typescript"]
-  },
-  {
-    "title": "Color wheel | Color schemes - Adobe Kuler",
-    "url": "https://kuler.adobe.com/create/color-wheel/",
-    "tags": ["Design", "Colors"]
-  },
-  {
-    "title": "Color.review - Colors that look and work great for everyone",
-    "url": "https://color.review/",
-    "tags": ["Design", "Colors"]
-  },
-  {
-    "title": "A Beginner’s Guide to Pairing Fonts | Webdesigntuts+",
-    "url": "http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/",
-    "tags": ["Design", "Fonts"]
-  },
-  {
-    "title": "10 Great Google Font Combinations You Can Copy | Design Shack",
-    "url": "http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/",
-    "tags": ["Design", "Fonts"]
-  },
-  {
-    "title": "Polytype",
-    "url": "https://www.polytype.co.uk/hellenic-typewriter",
-    "tags": ["Design", "Fonts"]
-  },
-  {
-    "title": "How we use Framer X at Wirex to build a great fintech app",
-    "url": "https://medium.com/wirex/how-we-use-framer-x-at-wirex-to-build-a-great-fintech-app-c979adf2933e",
-    "tags": ["Design", "FramerX"]
-  },
-  {
-    "title": "(1) Framer X Tutorial: 02. Visual Design - Drawing tools - YouTube",
-    "url": "https://www.youtube.com/watch?v=NXA2CrtaTN8&list=PLL0UAQVUEKI_fVbUd0ZT_kI0RmJP3XiDh&index=2",
-    "tags": ["Design", "FramerX"]
-  },
-  {
-    "title": "Framer X Course by Design+Code",
-    "url": "https://designcode.io/framer-x",
-    "tags": ["Design", "FramerX"]
-  },
-  {
-    "title": "Applying Mathematics To Web Design | Smashing Magazine",
-    "url": "http://www.smashingmagazine.com/2010/02/09/applying-mathematics-to-web-design/",
-    "tags": ["Design", "Goldern Ratio"]
-  },
-  {
-    "title": "The Grid System » golden ratio",
-    "url": "http://www.thegridsystem.org/tags/golden-ratio/",
-    "tags": ["Design", "Goldern Ratio"]
-  },
-  {
-    "title": "GRIDS, FIBONACCI SEQUENCE & RULE OF THIRDS",
-    "url": "http://v-redmond1215-dp.blogspot.fr/2013/02/form-function-layouts-magazine-session-1.html",
-    "tags": ["Design", "Goldern Ratio"]
-  },
-  {
-    "title": "<feDropShadow> - SVG: Scalable Vector Graphics | MDN",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDropShadow",
-    "tags": ["Design", "SVG"]
-  },
-  {
-    "title": "Neumorphism in user interfaces - UX Collective",
-    "url": "https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6",
-    "tags": ["Design", "Trends"]
-  },
-  {
-    "title": "Neumorphism/Soft UI CSS shadow generator",
-    "url": "https://neumorphism.io/#f3f216",
-    "tags": ["Design", "Trends"]
+    "title": "Epic Rainbow Kit — UI Kits on UI8",
+    "url": "https://ui8.net/products/epic-rainbow-kit",
+    "tags": ["Design", "UI Kits"]
   },
   {
     "title": "Dashboard60 UI Kit — UI Kits on UI8",
@@ -295,84 +47,87 @@
     "tags": ["Design", "UI Kits"]
   },
   {
+    "title": "UI Kits — UI8",
+    "url": "https://ui8.net/category/ui-kits",
+    "tags": ["Design", "UI Kits", "UI"]
+  },
+  {
     "title": "Finance Dashboard UI Kit — UI Kits on UI8",
     "url": "https://ui8.net/products/finance-dashboard-ui-kit",
     "tags": ["Design", "UI Kits"]
   },
   {
-    "title": "Epic Rainbow Kit — UI Kits on UI8",
-    "url": "https://ui8.net/products/epic-rainbow-kit",
-    "tags": ["Design", "UI Kits"]
+    "title": "Use Cases for JavaScript's IIFEs — Marius Schulz",
+    "url": "https://mariusschulz.com/blog/use-cases-for-javascripts-iifes",
+    "tags": ["Javascript", "IIFEs"],
+    "description": "IIFEs can be used all over the place in typical JavaScript applications. Despite block-scoped variables, the IIFE pattern is not obsolete at all!",
+    "date": "2020-11-22"
   },
   {
-    "title": "UI Kits — UI8",
-    "url": "https://ui8.net/category/ui-kits",
-    "tags": ["Design", "UI Kits"]
+    "title": "Learning JavaScript Design Patterns",
+    "url": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript",
+    "tags": ["Javascript", "Patterns"],
+    "description": "An open-source book on JavaScript Design Patterns"
   },
   {
-    "title": "Illustrations | unDraw",
-    "url": "https://undraw.co/illustrations",
-    "tags": ["Design", "UI Kits"]
+    "title": "CSS",
+    "url": "http://www.pencilscoop.com/tag/css/",
+    "tags": ["CSS"]
   },
   {
-    "title": "DrawKit - Beautiful free illustrations",
-    "url": "https://www.drawkit.io/",
-    "tags": ["Design", "UI Kits"]
+    "title": "Neumorphism/Soft UI CSS shadow generator",
+    "url": "https://neumorphism.io/#f3f216",
+    "tags": ["Design", "Trends"],
+    "description": "CSS code generator that will help with colors, gradients and shadows to adapt this new design trend or discover its posibilities."
   },
   {
-    "title": "Supabase UI",
-    "url": "https://ui.supabase.io/",
-    "tags": ["Design"]
+    "title": "O RLY Parody Book Generator",
+    "url": "https://dev.to/rly?ref=inspiring-online",
+    "tags": ["Fun"],
+    "description": "O RLY Parody Book Generator — DEV Community 👩‍💻👨‍💻"
   },
   {
-    "title": "Async/await, a more compelling example - Anthony Ricaud",
-    "url": "https://ricaud.me/blog/post/2017/10/Async/await%2C-a-more-compelling-example",
-    "tags": ["Animation", "rAF"]
-  },
-  {
-    "title": "Cool Tricks with Animations Using requestAnimationFrame | Yeti",
-    "url": "https://yeti.co/blog/cool-tricks-with-animating-using-requestanimationframe/",
-    "tags": ["Animation", "rAF"]
-  },
-  {
-    "title": "DIY Web Animations: Promises + rAF + Transitions — DasSur.ma",
-    "url": "https://dassur.ma/things/raf-promise/",
-    "tags": ["Animation", "rAF"]
-  },
-  {
-    "title": "Gain Motion Superpowers with requestAnimationFrame - Benjamin De Cock - Medium",
-    "url": "https://medium.com/@bdc/gain-motion-superpowers-with-requestanimationframe-ecc6d5b0d9a4",
-    "tags": ["Animation", "rAF"]
-  },
-  {
-    "title": "How to use requestAnimationFrame()",
+    "title": "How to use requestAnimationFrame",
     "url": "https://flaviocopes.com/requestanimationframe/",
-    "tags": ["Animation", "rAF"]
+    "tags": ["Animation", "rAF"],
+    "description": "Learn the API to perform animations and schedule event in a predictable way"
   },
   {
-    "title": "Javascript Promises for animation sequences - By",
-    "url": "https://hackernoon.com/javascript-promises-for-animation-sequences-e31873493d49",
-    "tags": ["Animation", "rAF"]
+    "title": "Quality Is Systemic - Jacob Kaplan-Moss",
+    "url": "https://jacobian.org/2022/sep/9/quality-is-systemic/",
+    "tags": ["Leadership"],
+    "description": "Software quality is more the result of a system designed to produce quality, and not so much the result of individual performance. That is: a group of mediocre programmers working with a structure designed to produce quality will produce better software than a group of fantastic programmers working in a system designed with other goals."
   },
   {
-    "title": "Preventing 'layout thrashing' | Wilson Page",
-    "url": "http://wilsonpage.co.uk/preventing-layout-thrashing/",
-    "tags": ["Animation", "rAF"]
+    "title": "SolidJS · Reactive Javascript Library",
+    "url": "https://www.solidjs.com/guides/reactivity",
+    "tags": ["SolidJS"],
+    "description": "A declarative, efficient and flexible JavaScript library for building user interfaces."
   },
   {
-    "title": "React Codesandbox - CodeSandbox",
-    "url": "https://codesandbox.io/s/1qwlpk4o8l",
-    "tags": ["Animation", "rAF"]
+    "title": "5 Questions Every Unit Test Must Answer",
+    "url": "https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d#.4ttnnzpgc",
+    "tags": ["Testing", "Unit Testing"],
+    "description": "Every developer knows we should write unit tests in order to prevent defects from being deployed to production. What most developers don’t know are the essential ingredients of every unit test. I…",
+    "date": "2019-08-07T02:15:03.431Z"
   },
   {
-    "title": "SmashingConf London — Jake Archibald on ‘The Event Loop’ on Vimeo",
-    "url": "https://vimeo.com/254947206",
-    "tags": ["Animation", "rAF"]
+    "title": "Selective Unit Testing – Costs and Benefits",
+    "url": "http://blog.stevensanderson.com/2009/11/04/selective-unit-testing-costs-and-benefits/",
+    "tags": ["Testing", "Unit Testing"],
+    "description": "Steve Sanderson's Blog"
   },
   {
-    "title": "Window.requestAnimationFrame() - Web APIs | MDN",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame",
-    "tags": ["Animation", "rAF"]
+    "title": "How does browser page lifecycle sequence work?",
+    "url": "https://stackoverflow.com/questions/44044956/how-does-browser-page-lifecycle-sequence-work",
+    "tags": ["Javascript", "Browser Lifecycle"],
+    "description": "Would like to create a presentation on how the browser work, does anybody know the exact lifecycle sequence which happen whenever a browser URL is requested?\n\nWhat are the steps which happen after a "
+  },
+  {
+    "title": "Writing Great Unit Tests: Best and Worst Practices",
+    "url": "http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/",
+    "tags": ["Testing", "Unit Testing"],
+    "description": "Steve Sanderson's Blog"
   },
   {
     "title": "Creating Animations and Interactions with Physical Models",
@@ -380,54 +135,39 @@
     "tags": ["Animation", "Spring"]
   },
   {
-    "title": "Modeling Physics in Javascript: Gravity and Drag",
-    "url": "https://burakkanber.com/blog/modeling-physics-javascript-gravity-and-drag/",
-    "tags": ["Animation", "Spring"]
+    "title": "Wrk Burger / Waaark x CEFIM",
+    "url": "https://burger.waaark.com/",
+    "tags": ["Design", "Inspiration"]
   },
   {
-    "title": "Physics in Javascript: Car Suspension - Part 1 (Spring, Mass, Damper)",
-    "url": "https://burakkanber.com/blog/physics-in-javascript-car-suspension-part-1-spring-mass-damper/",
-    "tags": ["Animation", "Spring"]
+    "title": "The Observer Pattern in JavaScript explained",
+    "url": "https://pawelgrzybek.com/the-observer-pattern-in-javascript-explained/",
+    "tags": ["Javascript", "Patterns"],
+    "description": "This popular pattern used by tons of JavaScript applications may save you from injecting costly dependencies in your project. Easy, clean and very useful."
   },
   {
-    "title": "Avoid Large, Complex Layouts and Layout Thrashing  |  Web Fundamentals",
-    "url": "https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing",
-    "tags": ["Animation"]
+    "title": "DIY Web Animations: Promises + rAF + Transitions — DasSur.ma",
+    "url": "https://dassur.ma/things/raf-promise/",
+    "tags": ["Animation", "rAF"],
+    "description": "The Web Animations API is great. Except that support is mediocre at best. I keep finding myself re-creating them using Promises, rAF and CSS Transitions, which turned out to be pretty ergonomic."
   },
   {
-    "title": "CSS Triggers",
-    "url": "https://csstriggers.com/",
-    "tags": ["Animation"]
+    "title": "Use the Responsive Grid System Calculator and create Responsive Web Sites Your Way.",
+    "url": "http://www.responsivegridsystem.com/calculator/",
+    "tags": ["Responsive"],
+    "description": "The Responsive Grid System calculator lets you choose your own number of columns and margins to create Responsive Web Sites your way."
   },
   {
-    "title": "CSS Versus JavaScript Animations  |  Web Fundamentals  |  Google Developers",
-    "url": "https://developers.google.com/web/fundamentals/design-and-ux/animations/css-vs-javascript",
-    "tags": ["Animation"]
+    "title": "Waaark",
+    "url": "https://waaark.com/works/",
+    "tags": ["Design", "Inspiration"]
   },
   {
-    "title": "Examples - ScrollMagic",
-    "url": "http://scrollmagic.io/examples/",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "GreenSock | 3D Transforms & More CSS3 Goodies Arrive in GSAP JS",
-    "url": "https://greensock.com/css3/",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "JSS",
-    "url": "https://cssinjs.org/swinging-cat-rx",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "Leaner, Meaner, Faster Animations with requestAnimationFrame - HTML5 Rocks",
-    "url": "https://www.html5rocks.com/en/tutorials/speed/animations/",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "Modern react animation packages | Pika",
-    "url": "https://www.pika.dev/search?q=react%20animation",
-    "tags": ["Animation"]
+    "title": "Where do I put my business logic in a React-Redux application?",
+    "url": "https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1",
+    "tags": ["Redux"],
+    "description": "This is a question that we have all struggled with in building applications. It is an important question because it influences the architecture of our code and how well our app will absorb new…",
+    "date": "2018-06-19T01:15:28.565Z"
   },
   {
     "title": "Normalized WheelDelta JavaScript",
@@ -435,54 +175,15 @@
     "tags": ["Animation"]
   },
   {
-    "title": "Raphaël—JavaScript Library",
-    "url": "http://raphaeljs.com/",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "The SVG `tags` Syntax: An Illustrated Guide | CSS-Tricks",
-    "url": "https://css-tricks.com/svg-tags-syntax-illustrated-guide/",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "Towards declarative touch interactions",
-    "url": "http://iamralpht.github.io/constraints/",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "wilsonpage/fastdom: Eliminates layout thrashing by batching DOM measurement and mutation tasks",
-    "url": "https://github.com/wilsonpage/fastdom",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "150+ Free Animated SVG Icons | Pencil Scoop | Web Design & Development",
-    "url": "http://www.pencilscoop.com/2013/12/150-free-animated-svg-icons/",
-    "tags": ["Animation"]
-  },
-  {
-    "title": "4 ways to create CSS that's modular and scalable | Creative Bloq",
-    "url": "https://www.creativebloq.com/css3/create-modular-and-scalable-css-9134351",
-    "tags": ["CSS"]
-  },
-  {
-    "title": "All you need to know about CSS Transitions",
-    "url": "http://blog.alexmaccaw.com/css-transitions",
-    "tags": ["CSS"]
-  },
-  {
-    "title": "CSS | Pencil Scoop | Web Design & Development",
-    "url": "http://www.pencilscoop.com/tag/css/",
-    "tags": ["CSS"]
-  },
-  {
     "title": "cubic-bezier(.71,.86,.82,.67) ✿ cubic-bezier.com",
     "url": "http://cubic-bezier.com/#.71,.86,.82,.67",
     "tags": ["CSS"]
   },
   {
-    "title": "Flexible data tables with CSS Grid",
-    "url": "https://adamlynch.com/flexible-data-tables-with-css-grid/?1#toggling-columns",
-    "tags": ["CSS"]
+    "title": "Arcade: Scale Brand Decisions With Confidence",
+    "url": "https://usearcade.com/",
+    "tags": ["Design Systems"],
+    "description": "Arcade is for enterprise teams who want to work with design tokens without writing code."
   },
   {
     "title": "https://counterwallet.io/#pages/simplebuy.html",
@@ -490,149 +191,95 @@
     "tags": ["CSS"]
   },
   {
-    "title": "iOS6 html hardware acceleration changes and how to fix them | indiegamr",
-    "url": "http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/",
-    "tags": ["CSS"]
+    "title": "Leaky Components",
+    "url": "https://medium.com/charisol-community/leaky-components-446dec290cb4",
+    "tags": ["React", "Performance"],
+    "description": "Avoiding warnings on unmounted react component. “Leaky Components” is published by Marvin jude in Charisol Community.",
+    "date": "2021-12-11T17:57:51.020Z"
   },
   {
-    "title": "Long-standing CSS Methodologies | advancedweb.dev",
-    "url": "https://advancedweb.dev/css-methodologies",
-    "tags": ["CSS"]
+    "title": "4 false assumptions we made about our Design System",
+    "url": "https://medium.com/societe-generale-design/4-false-assumptions-we-made-about-our-design-system-updated-be844b8ad64b",
+    "tags": ["Design Systems"],
+    "description": "This article was originally published in April 2020 with 3 false assumptions. We lost it, then backed it up (phew!) and added a bonus 4th at the end. Fabien and I took the stage at the Design System…",
+    "date": "2022-02-28T16:13:15.879Z"
   },
   {
-    "title": "Modular CSS naming conventions",
-    "url": "http://thesassway.com/advanced/modular-css-naming-conventions",
-    "tags": ["CSS"]
+    "title": "Color.review - Colors that look and work great for everyone",
+    "url": "https://color.review/",
+    "tags": ["Design", "Colors"],
+    "description": "A modern tool for exploring and finding accessible colors. Make sure that everyone can see your creations."
   },
   {
-    "title": "Datatables.net with React Js ( custom Delete Buttons) | by Ashish | Medium",
-    "url": "https://medium.com/@ashish_dev/datatables-net-with-react-js-custom-delete-buttons-912bc2755474",
-    "tags": ["Datatables"]
+    "title": "Latest Front-End Development news",
+    "url": "https://dev.to/rachsmith/how-i-keep-up-with-the-latest-front-end-development-news-without-scrolling-my-life-away-58a6",
+    "tags": ["Frontend", "News"],
+    "description": "There are very few things I missed when I quit spending time on Twitter, but one of them was keeping... Tagged with resources, javascript, frontend.",
+    "date": "2021-09-01T03:13:05Z"
   },
   {
-    "title": "A badass list of frontend development resources I collected over time.",
-    "url": "https://gist.github.com/dypsilon/5819504",
-    "tags": ["Frontend"]
+    "title": "The SVG `tags` Syntax: An Illustrated Guide",
+    "url": "https://css-tricks.com/svg-tags-syntax-illustrated-guide/",
+    "tags": ["SVG"]
   },
   {
-    "title": "Trending Programming Tips - Trending Tips",
-    "url": "https://coderwall.com/trending",
-    "tags": ["Frontend"]
+    "title": "Examples",
+    "url": "https://cube.fyi/examples.html#talks-videos-and-interviews",
+    "tags": ["CSS", "Methodologies"],
+    "description": "A CSS methodology oriented towards simplicity and consistency with a heavy dosage of pragmatism."
   },
   {
-    "title": "Clean architecture for the rest of us",
-    "url": "https://pusher.com/tutorials/clean-architecture-introduction",
-    "tags": ["Frontend"]
+    "title": "Illustrations",
+    "url": "https://undraw.co/illustrations",
+    "tags": ["Design", "UI Kits"],
+    "description": "The design project with open-source illustrations for any idea you can imagine and create. Create beautiful websites, products and applications with your color, for free."
   },
   {
-    "title": "Quick Wins for Web Accessibility | A11y Coffee",
+    "title": "Quick Wins for Web Accessibility",
     "url": "https://a11y.coffee/quick-wins/#1-low-contrast",
-    "tags": ["Frontend"]
+    "tags": ["Frontend", "Accessibility"],
+    "description": "An introduction to the six most common accessibility errors, and how to fix them."
   },
   {
-    "title": "Page: DOMContentLoaded, load, beforeunload, unload",
-    "url": "https://javascript.info/onload-ondomcontentloaded",
-    "tags": ["Frontend"]
+    "title": "Testing Recipes – React",
+    "url": "https://reactjs.org/docs/testing-recipes.html",
+    "tags": ["Testing", "React"],
+    "description": "A JavaScript library for building user interfaces"
   },
   {
-    "title": "Lint Staged",
-    "url": "https://engineering.tes.com/post/quick-clean-commits-with-partial-linting-lint-staged",
-    "tags": ["Frontend"]
-  },
-  {
-    "title": "Links must have discernible text Axe Rules | Deque University | Deque Systems",
-    "url": "https://dequeuniversity.com/rules/axe/3.3/link-title",
-    "tags": ["Frontend"]
-  },
-  {
-    "title": "easings.js/easings.js at master · iamso/easings.js",
-    "url": "https://github.com/iamso/easings.js/blob/master/src/easings.js",
-    "tags": ["Frontend", "Easing functions"]
-  },
-  {
-    "title": "Simple Easing Functions in Javascript - see https://github.com/gre/bezier-easing",
-    "url": "https://gist.github.com/gre/1650294",
-    "tags": ["Frontend", "Easing functions"]
-  },
-  {
-    "title": "easing-js/easing.js at master · danro/easing-js",
-    "url": "https://github.com/danro/easing-js/blob/master/easing.js",
-    "tags": ["Frontend", "Easing functions"]
-  },
-  {
-    "title": "Waaark",
-    "url": "https://waaark.com/works/",
-    "tags": ["Inspiration"]
-  },
-  {
-    "title": "Wrk Burger / Waaark x CEFIM",
-    "url": "https://burger.waaark.com/",
-    "tags": ["Inspiration"]
-  },
-  {
-    "title": "O RLY Parody Book Generator - DEV Community 👩‍💻👨‍💻",
-    "url": "https://dev.to/rly?ref=inspiring-online",
-    "tags": ["Inspiration"]
-  },
-  {
-    "title": "onformative – work",
-    "url": "https://onformative.com/work",
-    "tags": ["Inspiration"]
-  },
-  {
-    "title": "Andrew Coelho",
-    "url": "https://www.andrewcoelho.com/",
-    "tags": ["Inspiration"]
-  },
-  {
-    "title": "IAAH™ / v7",
-    "url": "http://www.iamalwayshungry.com/VERS7/index.html#/Hoop/",
-    "tags": ["Inspiration"]
+    "title": "GRIDS, FIBONACCI SEQUENCE & RULE OF THIRDS",
+    "url": "http://v-redmond1215-dp.blogspot.fr/2013/02/form-function-layouts-magazine-session-1.html",
+    "tags": ["Design", "Goldern Ratio"],
+    "description": "Form function & layout  Type composition - typeissexy.com   over the weeks mini thumbnails - looking at grids th eres grids to everything   ..."
   },
   {
     "title": "Make Me Pulse",
     "url": "http://makemepulse.com/",
-    "tags": ["Inspiration"]
+    "tags": ["Design", "Inspiration"],
+    "description": "makemepulse is a global interactive production studio. We turn aesthetics into experiences. Light-as-air tech with purpose."
   },
   {
-    "title": "Front-end performance for web designers and front-end developers – CSS Wizardry – CSS, OOCSS, front-end architecture, performance and more, by Harry Roberts",
-    "url": "http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/",
-    "tags": ["Optimisation"]
+    "title": "Google",
+    "url": "https://www.google.bg/?gfe_rd=cr&ei=QCSsVLXTC6Xe8gehqoGYBw&gws_rd=ssl",
+    "tags": ["Design", "Vertical Rhythm"]
   },
   {
-    "title": "Performance Optimisation — Advanced FP part 3 | by Jonas Neumann | NEW IT Engineering | Medium",
-    "url": "https://medium.com/twodigits/performance-optimisation-advanced-fp-part-3-717a42c1f675",
-    "tags": ["Optimisation"]
+    "title": "iOS6 html hardware acceleration changes and how to fix them",
+    "url": "http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/",
+    "tags": ["CSS"]
   },
   {
-    "title": "How to use Tail Call Optimizations in JavaScript | by Kesk -*- | JavaScript in Plain English",
-    "url": "https://javascript.plainenglish.io/javascript-optimizations-tail-call-optimization-tco-471b4f8e4f37",
-    "tags": ["Optimisation"]
+    "title": "TDD, Unit Tests and the Passage of Time",
+    "url": "https://henrikwarne.com/2013/12/08/tdd-unit-tests-and-the-passage-of-time/",
+    "tags": ["Testing", "TDD", "Unit Testing"],
+    "description": "Many programmers have a hard time writing good unit-tests for code that involves time. For example, how do you test time-outs, or periodic clean-up jobs? I have seen many tests that create elaborate set-ups with lots of dependencies, or introduce real time gaps, just to be able to test those parts. However, if you structure…"
   },
   {
-    "title": "Fastify, Fast and low overhead web framework, for Node.js",
-    "url": "https://www.fastify.io/",
-    "tags": ["Platforms"]
-  },
-  {
-    "title": "Redux: Pure and Impure Functions from @dan_abramov on @eggheadio",
-    "url": "https://egghead.io/lessons/react-redux-pure-and-impure-functions",
-    "tags": ["Redux"]
-  },
-  {
-    "title": "Redux: Fetching Data on Route Change from @dan_abramov on @eggheadio",
-    "url": "https://egghead.io/lessons/javascript-redux-fetching-data-on-route-change",
-    "tags": ["Redux"]
-  },
-  {
-    "title": "Redux Logic Flow — Crazy Simple Summary - Level Up Coding",
-    "url": "https://levelup.gitconnected.com/redux-logic-flow-crazy-simple-summary-35416eadabd8",
-    "tags": ["Redux"]
-  },
-  {
-    "title": "Where do I put my business logic in a React-Redux application?",
-    "url": "https://medium.com/@jeffbski/where-do-i-put-my-business-logic-in-a-react-redux-application-9253ef91ce1",
-    "tags": ["Redux"]
+    "title": "Designing Hazel's Accessible Color System (Part 2)",
+    "url": "https://medium.com/@thisisfranciswu/designing-hazels-accessible-color-system-part-2-beaea5355cd4",
+    "tags": ["Design Systems"],
+    "description": "Note that this is part 2 of 2 about designing Hazel’s accessible color system. If you haven’t read part 1, here you go! Whatever the solution, I had a feeling design tokens were going to offer some…",
+    "date": "2022-03-26T02:13:08.471Z"
   },
   {
     "title": "Grid Essay",
@@ -640,373 +287,522 @@
     "tags": ["Responsive"]
   },
   {
-    "title": "Use the Responsive Grid System Calculator and create Responsive Web Sites Your Way.",
-    "url": "http://www.responsivegridsystem.com/calculator/",
-    "tags": ["Responsive"]
-  },
-  {
-    "title": "LukeW | Mobile First",
-    "url": "http://www.lukew.com/ff/entry.asp?933",
-    "tags": ["Responsive"]
-  },
-  {
-    "title": "website dimensions - exact pixels - live check",
-    "url": "http://www.websitedimensions.com/",
-    "tags": ["Responsive"]
-  },
-  {
-    "title": "CSS with vertical rhythm | drewish",
-    "url": "http://drewish.com/tools/vertical-rhythm/",
-    "tags": ["Responsive"]
-  },
-  {
-    "title": "Aligning type to baseline the right way using SASS — Typography — Medium",
-    "url": "https://medium.com/typography/e258fce47a9b",
-    "tags": ["Responsive", "Vertical Rhythm"]
-  },
-  {
-    "title": "Improving Layout With Vertical Rhythm - Tuts+ Web Design Article",
-    "url": "http://webdesign.tutsplus.com/articles/improving-layout-with-vertical-rhythm--webdesign-14070",
-    "tags": ["Responsive", "Vertical Rhythm"]
-  },
-  {
-    "title": "Google",
-    "url": "https://www.google.bg/?gfe_rd=cr&ei=QCSsVLXTC6Xe8gehqoGYBw&gws_rd=ssl",
-    "tags": ["Responsive", "Vertical Rhythm"]
-  },
-  {
-    "title": "Displays",
-    "url": "https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html",
-    "tags": ["Responsive"]
-  },
-  {
-    "title": "What is Your iPad's Screen Resolution",
-    "url": "https://www.lifewire.com/what-is-ipads-screen-resolution-ips-display-1994325",
-    "tags": ["Responsive"]
-  },
-  {
-    "title": "Lost with Redux and sagas? Implement them yourself! - Sébastien Castiel",
-    "url": "https://scastiel.dev/posts/2019-08-03-lost-redux-saga-reimplement-them/",
-    "tags": ["Saga"]
-  },
-  {
-    "title": "Roadmap | XState Docs",
-    "url": "https://xstate.js.org/docs/roadmap/#in-progress-q2-2022",
-    "tags": ["State Machines"]
-  },
-  {
-    "title": "Writing Great Unit Tests: Best and Worst Practices",
-    "url": "http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "The Purpose of Code - Simple Programmer",
-    "url": "https://simpleprogrammer.com/there-are-only-two-roles-of-code/",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "TDD, Unit Tests and the Passage of Time | Henrik Warne's blog",
-    "url": "https://henrikwarne.com/2013/12/08/tdd-unit-tests-and-the-passage-of-time/",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "Selective Unit Testing – Costs and Benefits",
-    "url": "http://blog.stevensanderson.com/2009/11/04/selective-unit-testing-costs-and-benefits/",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "A Response to “Why Most Unit Testing is Waste” | Henrik Warne's blog",
-    "url": "https://henrikwarne.com/2014/09/04/a-response-to-why-most-unit-testing-is-waste/",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "Testing Recipes – React",
-    "url": "https://reactjs.org/docs/testing-recipes.html",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "Best Practices for Spies, Stubs and Mocks in Sinon.js - Semaphore",
-    "url": "https://semaphoreci.com/community/tutorials/best-practices-for-spies-stubs-and-mocks-in-sinon-js",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "Writing Tests | Redux",
-    "url": "https://redux.js.org/recipes/writing-tests",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "5 Questions Every Unit Test Must Answer - JavaScript Scene - Medium",
-    "url": "https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d#.4ttnnzpgc",
-    "tags": ["Testing"]
-  },
-  {
-    "title": "Modern React testing, part 1: best practices — Artem Sapegin’s Blog",
+    "title": "Modern React testing, part 1: best practices — Artem Sapegin's Blog",
     "url": "https://blog.sapegin.me/all/react-testing-1-best-practices/",
-    "tags": ["Testing"]
+    "tags": ["Testing", "React"],
+    "description": "You’ll learn why to write automated tests, what tests to write and how to write them. What are the best practices of modern frontend and React testing."
   },
   {
-    "title": "Test to maintain quality | Storybook Tutorials",
-    "url": "https://storybook.js.org/tutorials/design-systems-for-developers/react/en/test/",
-    "tags": ["Testing"]
+    "title": "onformative – work",
+    "url": "https://onformative.com/work",
+    "tags": ["Design", "Inspiration"],
+    "description": "From interactive installations, data-driven artworks and real-time content to generative design, brand communication and machine-learning we design and develop with a future-facing, aesthetic approach. At the intersection of technology, art and design we are constantly searching for new ways of creative expression."
   },
   {
-    "title": "Quality Is Systemic - Jacob Kaplan-Moss",
-    "url": "https://jacobian.org/2022/sep/9/quality-is-systemic/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Red Bead Experiment with Dr. W. Edwards Deming - YouTube",
-    "url": "https://www.youtube.com/watch?v=ckBfbvOXDvU",
-    "tags": ["Web"]
-  },
-  {
-    "title": "React vs SolidJS, Fight! - YouTube",
-    "url": "https://www.youtube.com/watch?v=OqcHoLWyyIw",
-    "tags": ["Web"]
-  },
-  {
-    "title": "SolidJS · Reactive Javascript Library",
-    "url": "https://www.solidjs.com/guides/reactivity",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Creating Your Life Dashboard. A couple of months ago I did an… | by mary elisabeth | Medium",
-    "url": "https://medium.com/@maryimproves/creating-your-life-dashboard-32b4af11daa9",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Create a Personal Dashboard | Personal Life Dashboard | Process Zip",
-    "url": "https://www.processzip.com/how-to-create-a-personal-dashboard-life-dashboard/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "How to Sell Your Startup Company | MicroAcquire",
-    "url": "https://microacquire.com/sellers/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Frontend Development News and Trends | The New Stack",
-    "url": "https://thenewstack.io/category/frontend-dev/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "How I keep up with the latest Front-End Development news, without scrolling my life away - DEV Community 👩‍💻👨‍💻",
-    "url": "https://dev.to/rachsmith/how-i-keep-up-with-the-latest-front-end-development-news-without-scrolling-my-life-away-58a6",
-    "tags": ["Web"]
-  },
-  {
-    "title": "The 19 Best Newsletters for Front-End Web Developers - WebFX",
-    "url": "https://www.webfx.com/blog/web-design/newsletters-frontend-web-dev/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Atomico webcomponents",
-    "url": "https://atomicojs.dev/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "30 seconds of code",
-    "url": "https://www.30secondsofcode.org/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Examples | CUBE CSS",
-    "url": "https://cube.fyi/examples.html#talks-videos-and-interviews",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Tutorials | Codrops",
-    "url": "https://tympanus.net/codrops/category/tutorials/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Leo is my title",
-    "url": "https://leoismy.title/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Leo Gardiner on Behance",
-    "url": "https://www.behance.net/woaitsleoc264/appreciated",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Robby Leonardi | hey@rleonardi.com",
-    "url": "http://www.rleonardi.com/interactive-resume/",
-    "tags": ["Web"]
-  },
-  {
-    "title": "Top Websites to List and Find a Coworking Space",
-    "url": "https://www.coworkingresources.org/blog/top-websites-to-list-and-find-a-coworking-space",
-    "tags": ["Web"]
-  },
-  {
-    "title": "seanconnollydev/style-dictionary-material-ui: Prototype for style-dictionary, storybook and material-ui.",
-    "url": "https://github.com/seanconnollydev/style-dictionary-material-ui",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "divriots/style-dictionary-to-figma: A utility that mutates and transforms a style-dictionary object into something Figma Tokens plugin understands",
-    "url": "https://github.com/divriots/style-dictionary-to-figma",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Overview",
-    "url": "https://amzn.github.io/style-dictionary/#/README",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Style Dictionary Playground",
-    "url": "https://www.style-dictionary-play.dev/",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Tokens",
-    "url": "https://amzn.github.io/style-dictionary/#/tokens?id=category-type-item",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Figma Tokens – Documentation",
-    "url": "https://docs.tokens.studio/",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Live demo: Design Tokens using Style-Dictionary & Figma - YouTube",
-    "url": "https://www.youtube.com/watch?v=yDi5ADS2HKg",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "4 false assumptions we made about our Design System (updated) | by Morgane Peng | Societe Generale Design | Medium",
-    "url": "https://medium.com/societe-generale-design/4-false-assumptions-we-made-about-our-design-system-updated-be844b8ad64b",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Design System Checklist",
-    "url": "https://designsystemchecklist.com/category/design-language/",
-    "tags": ["Design Systems"]
+    "title": "IAAH™ / v7",
+    "url": "http://www.iamalwayshungry.com/VERS7/index.html#/Hoop/",
+    "tags": ["Inspiration"],
+    "description": "iamalwayshungry, the multi-disciplinary design studio of Nessim Higson located in New Orleans and Los Angeles."
   },
   {
     "title": "Design patterns",
     "url": "https://ui-patterns.com/patterns",
-    "tags": ["Design Systems"]
+    "tags": ["Design Systems", "UI Patterns"],
+    "description": "It has long been common practice in software design to use libraries of recurring solutions to solve common problems in software design. Such solutions are also called design patterns."
   },
   {
-    "title": "Tools",
-    "url": "http://styleguides.io/tools.html",
-    "tags": ["Design Systems"]
+    "title": "Raphaël—JavaScript Library",
+    "url": "http://raphaeljs.com/",
+    "tags": ["Animation", "Spring"],
+    "description": "The most popular coding language for the web is javascript; so much so that since the advent of HTML5, it has now been officially accepted as the default standard. Javascript has moved beyond a smaller client-side browser-based language to become integrated not just for front-end design, but also for back-end server-side development. As a result […]"
   },
   {
-    "title": "Atomic Design | Atomic Design by Brad Frost",
+    "title": "Front-end performance for web designers and front-end developers – CSS Wizardry – CSS, OOCSS, front-end architecture, performance and more, by Harry Roberts",
+    "url": "http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/",
+    "tags": ["Performance"],
+    "description": "A comprehensive primer on front-end performance for designers and front-end developers"
+  },
+  {
+    "title": "Performance Optimisation — Advanced FP part 3 | by Jonas Neumann",
+    "url": "https://medium.com/twodigits/performance-optimisation-advanced-fp-part-3-717a42c1f675",
+    "tags": ["Performance"],
+    "description": "Functional Programming and immutability in particular are seemingly performance killers. Not everything is as it seems. Find out what you can do to achieve great performance with functional programming.",
+    "date": "2022-03-19T02:33:10.972Z"
+  },
+  {
+    "title": "Polytype",
+    "url": "https://www.polytype.co.uk/hellenic-typewriter",
+    "tags": ["Design", "Fonts"],
+    "description": "Polytype is an independent type foundry based in Glasgow, Scotland, offering high-quality original retail typefaces and custom type services since 2016."
+  },
+  {
+    "title": "Physics in Javascript: Car Suspension - Part 1 (Spring, Mass, Damper)",
+    "url": "https://burakkanber.com/blog/physics-in-javascript-car-suspension-part-1-spring-mass-damper/",
+    "tags": ["Animation", "Spring"],
+    "description": "Our big project -- our goal -- for this mechanics/dynamics portion of Modeling Physics in Javascript is to model a car's suspension system. It'll take us three non-consecutive articles to get there, but it's a worthy system to model. If you can model a car suspension then it's safe",
+    "date": "2017-03-27T14:19:45.000Z"
+  },
+  {
+    "title": "Frontend Development News and Trends",
+    "url": "https://thenewstack.io/category/frontend-dev/",
+    "tags": ["Frontend", "News"],
+    "description": "Frontend development influences many client decisions and impacts business performance. Learn more about merging design and code in this category."
+  },
+  {
+    "title": "Test to maintain quality",
+    "url": "https://storybook.js.org/tutorials/design-systems-for-developers/react/en/test/",
+    "tags": ["Testing", "Storybook"],
+    "description": "Learn how to develop UIs with components and design systems. Our in-depth frontend guides are created by Storybook maintainers and peer-reviewed by the open source community."
+  },
+  {
+    "title": "ES6 for Everyone — The best way to learn modern ES6 JavaScript",
+    "url": "https://es6.io/",
+    "tags": ["Javascript", "ES6"],
+    "description": "A premium training course to strengthen your core JavaScript skills and master all that ES6 has to offer. 21 Modules and 77 Videos!"
+  },
+  {
+    "title": "Javascript Promises for animation sequences",
+    "url": "https://hackernoon.com/javascript-promises-for-animation-sequences-e31873493d49",
+    "tags": ["Animation", "rAF"],
+    "description": "I recently had the chance to participate in the amazing <a href=\"http://creativecoding.club\" target=\"_blank\">creativecoding.club</a> and slap together an animation of a tree with flowers that fall to the ground. The tree builds up first using a randomized algorithm (inspired by this <a href=\"http://codepen.io/survivol/pen/pbGpog\" target=\"_blank\">growing</a> pen from survivol), then attaches flowers randomly to the ends of the branches of the newly grown tree."
+  },
+  {
+    "title": "Component-Specific Design Tokens",
+    "url": "https://cloudfour.com/thinks/component-specific-design-tokens/",
+    "tags": ["Design Systems"],
+    "description": "In a recent project, I helped implement design tokens in an established design system. One of the more challenging parts of this work was updating the components to use design tokens. I learned a couple of things that might help speed up the process for others. Before we talk about…"
+  },
+  {
+    "title": "Atomic Design by Brad Frost",
     "url": "https://atomicdesign.bradfrost.com/table-of-contents/",
-    "tags": ["Design Systems"]
+    "tags": ["Design Systems", "Atomic Design"],
+    "description": "Learn how to create and maintain digital design systems, allowing your team to roll out higher quality, more consistent UIs faster than ever before.\n"
   },
   {
-    "title": "Installing Pattern Lab - Pattern Lab",
-    "url": "https://patternlab.io/docs/installing-pattern-lab/",
-    "tags": ["Design Systems"]
+    "title": "30 seconds of code",
+    "url": "https://www.30secondsofcode.org/",
+    "tags": ["Frontend", "News"],
+    "description": "Browse 1189 short code snippets for all your development needs on 30 seconds of code."
   },
   {
     "title": "Bolt Design System",
     "url": "https://boltdesignsystem.com/",
-    "tags": ["Design Systems"]
+    "tags": ["Design Systems"],
+    "description": "The Bolt Design System provides guidelines, reusable UI components, visual styles, tools, and other resources that power Pega’s digital ecosystem; saving time while keeping projects on-brand, and in scope."
   },
   {
-    "title": "Creating multi-brand design systems",
-    "url": "https://www.figma.com/blog/creating-multi-brand-design-systems/",
-    "tags": ["Design Systems"]
+    "title": "Gain Motion Superpowers with requestAnimationFrame",
+    "url": "https://medium.com/@bdc/gain-motion-superpowers-with-requestanimationframe-ecc6d5b0d9a4",
+    "tags": ["Animation", "rAF"],
+    "description": "In my last blog post explaining some of the technical details behind Connect, I briefly touched on the different options we now have to animate things on the web. I prioritized these options by ease…",
+    "date": "2018-06-21T03:35:06.091Z"
   },
   {
-    "title": "Designing with tokens for a flexible multi-brand design… | Clearleft",
-    "url": "https://clearleft.com/posts/designing-with-tokens-for-a-flexible-multi-brand-design-system",
-    "tags": ["Design Systems"]
+    "title": "Improving Layout With Vertical Rhythm - Tuts+ Web Design Article",
+    "url": "http://webdesign.tutsplus.com/articles/improving-layout-with-vertical-rhythm--webdesign-14070",
+    "tags": ["Design", "Vertical Rhythm"],
+    "description": "\nLearning all about the ins and outs of the technical side of typography is good. It will give you a solid grounding when looking for typefaces or fonts and will help you understand a little more...",
+    "date": "2013-08-13 09:07:58 UTC"
   },
   {
-    "title": "Component Tokens & Themes Example [learn Figma Tokens] – Figma",
-    "url": "https://www.figma.com/community/file/1077953107713783283",
-    "tags": ["Design Systems"]
+    "title": "JS Callbacks to Promises",
+    "url": "https://medium.com/@samthor/js-callbacks-to-promises-541adc46c07c",
+    "tags": ["Javascript", "ES6"],
+    "description": "This post is about converting old APIs like requestAnimationFrame to modern, Promise-based APIs. ⚠️ If you just want to see the code, scroll down. Promises are great. They represent a common way to…",
+    "date": "2018-06-07T06:38:14.155Z"
   },
   {
-    "title": "Arcade: Scale Brand Decisions With Confidence",
-    "url": "https://usearcade.com/",
-    "tags": ["Design Systems"]
+    "title": "getify/You-Dont-Know-JS: A book series on JavaScript.",
+    "url": "https://github.com/getify/You-Dont-Know-JS",
+    "tags": ["Javascript"],
+    "description": "A book series on JavaScript. @YDKJS on twitter. Contribute to getify/You-Dont-Know-JS development by creating an account on GitHub."
   },
   {
-    "title": "Workshop: How to build a Design System with Design Tokens in Figma - Jan Six",
-    "url": "https://intodesignsystems.gumroad.com/l/opter",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Component Spec Tool – Figma",
-    "url": "https://www.figma.com/community/file/1084193931826755668",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Designing Hazel’s Accessible Color System (Part 1) | by Francis Wu | Medium",
-    "url": "https://medium.com/@thisisfranciswu/designing-hazels-accessible-color-system-part-1-8a73a2298c35",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Designing Hazel’s Accessible Color System (Part 2) | by Francis Wu | Medium",
-    "url": "https://medium.com/@thisisfranciswu/designing-hazels-accessible-color-system-part-2-beaea5355cd4",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Component-Specific Design Tokens - Cloud Four",
-    "url": "https://cloudfour.com/thinks/component-specific-design-tokens/",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "The Practical Guide to Naming Design Tokens | UX Collective",
-    "url": "https://uxdesign.cc/naming-design-tokens-9454818ed7cb",
-    "tags": ["Design Systems"]
-  },
-  {
-    "title": "Naming Tokens in Design Systems. Terms, Types, and Taxonomy to Describe… | by Nathan Curtis | EightShapes | Medium",
+    "title": "Naming Tokens in Design Systems. Terms, Types, and Taxonomy to Describe",
     "url": "https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676",
-    "tags": ["Design Systems"]
+    "tags": ["Design Systems"],
+    "description": "Design tokens have provided a visual foundation of many design systems since Salesforce pioneered the concept in 2014. I wrote an impassioned article on design tokens in 2016, and my energy on the…",
+    "date": "2022-11-11T02:39:22.410Z"
   },
   {
-    "title": "How to combine Design Tokens, defined in your design tool, with Material-UI using Stratos Tokens App | by Fredrik Ward | Sketch2React | Medium",
-    "url": "https://medium.com/@Freedruk/how-to-combine-design-tokens-with-material-ui-30a982c17c22",
-    "tags": ["Design Systems"]
+    "title": "A Response to “Why Most Unit Testing is Waste”",
+    "url": "https://henrikwarne.com/2014/09/04/a-response-to-why-most-unit-testing-is-waste/",
+    "tags": ["Testing", "Unit Testing"],
+    "description": "A few months ago I came across the article Why Most Unit Testing is Waste by James O Coplien. The title is an accurate description of the contents - James considers most unit tests to be useless. He expands his arguments in the follow-up article. I was quite intrigued, since I get a lot of value…"
   },
   {
-    "title": "Design Systems For Figma",
-    "url": "https://www.designsystemsforfigma.com/",
-    "tags": ["Design Systems"]
+    "title": "10 Great Google Font Combinations You Can Copy",
+    "url": "http://designshack.net/articles/css/10-great-google-font-combinations-you-can-copy/",
+    "tags": ["Design", "Fonts"],
+    "description": "The average man considers which flavor of Doritos will taste good with his Heineken. The sophisticated man considers which cheese will pair well with his choice of wine. The designer of course considers which two fonts will look great on the same page. Today we’re going to use the Go...",
+    "date": "2017-07-13T09:00:23+01:00"
   },
   {
-    "title": "Placeholder Components — Editable components without detaching in Figma - YouTube",
-    "url": "https://www.youtube.com/watch?v=gS-MvibsunE&ab_channel=TheFunofIterating",
-    "tags": ["Figma"]
+    "title": "All you need to know about CSS Transitions",
+    "url": "http://blog.alexmaccaw.com/css-transitions",
+    "tags": ["CSS"]
   },
   {
-    "title": "Master plugin for Figma",
-    "url": "https://dominate.design/",
-    "tags": ["Figma"]
+    "title": "Live demo: Design Tokens using Style-Dictionary & Figma - YouTube",
+    "url": "https://www.youtube.com/watch?v=yDi5ADS2HKg",
+    "tags": ["Design Systems"],
+    "description": "During this live demo @th4is_ds and @jorenbroekema will explore how to bring the Design Tokens from Style-Dictionary into Figma via the Figma Tokens plugin.T..."
   },
   {
     "title": "How to Bridge the Developer-Designer Gap - The New Stack",
     "url": "https://thenewstack.io/how-to-bridge-the-developer-designer-gap/",
-    "tags": ["Figma"]
+    "tags": ["Figma"],
+    "description": "Designers and developers often speak a different language, making collaboration painful. We talk to Progress Software's Kathryn Grayson Nanz."
   },
   {
-    "title": "Default Theme - Material UI",
-    "url": "https://mui.com/material-ui/customization/default-theme/#main-content",
-    "tags": ["MUI"]
+    "title": "React TypeScript Cheatsheets",
+    "url": "https://react-typescript-cheatsheet.netlify.app/docs/basic/setup",
+    "tags": ["Typescript", "React"],
+    "description": "Prerequisites"
   },
   {
-    "title": "MUI System - MUI System",
-    "url": "https://mui.com/system/basics/",
-    "tags": ["MUI"]
+    "title": "Master plugin for Figma",
+    "url": "https://dominate.design/",
+    "tags": ["Figma"],
+    "description": "Create, attach, clone and move components in a couple of clicks without losing overrides!"
   },
   {
-    "title": "Hello from Siriwat.K",
-    "url": "https://siriwatk.dev/",
-    "tags": ["MUI"]
+    "title": "Design System Checklist",
+    "url": "https://designsystemchecklist.com/category/design-language/",
+    "tags": ["Design Systems"],
+    "description": "An open-source checklist to help you plan, build and grow your design system."
   },
   {
-    "title": "First look at Joy UI 🥳 - MUI",
-    "url": "https://mui.com/blog/first-look-at-joy/",
-    "tags": ["MUI"]
+    "title": "Concepts of Functional Programming in Javascript",
+    "url": "https://medium.com/the-renaissance-developer/concepts-of-functional-programming-in-javascript-6bc84220d2aa",
+    "tags": ["Javascript", "Functional Programming"],
+    "description": "Concepts of Functional Programming in Javascript. After a long time learning and working with object-oriented programming, I took a step back to think about system complexity..",
+    "date": "2021-12-06T21:51:23.794Z"
+  },
+  {
+    "title": "The 19 Best Newsletters for Front-End Web Developers",
+    "url": "https://www.webfx.com/blog/web-design/newsletters-frontend-web-dev/",
+    "tags": ["Frontend", "News"],
+    "description": "Are you a front-end web developer? If so, check out these free email newsletters, to get access to relevant resources related to web development!"
+  },
+  {
+    "title": "Creating multi-brand design systems",
+    "url": "https://www.figma.com/blog/creating-multi-brand-design-systems/",
+    "tags": ["Design Systems"],
+    "description": "Learnings about building and maintaining design systems"
+  },
+  {
+    "title": "When to use Type Aliases or Interfaces in TypeScript",
+    "url": "https://www.carlrippon.com/when-to-use-type-aliases-v-interfaces/",
+    "tags": ["Typescript", "Type vs Interface"],
+    "description": "Whether type aliases or interfaces are best for a range of different use cases."
+  },
+  {
+    "title": "How to combine Design Tokens, defined in your design tool, with Material-UI using Stratos Tokens App",
+    "url": "https://medium.com/@Freedruk/how-to-combine-design-tokens-with-material-ui-30a982c17c22",
+    "tags": ["Design Systems"],
+    "description": "TLDR; Design tokens and styling in Material-UI is surprisingly closely related and in this article I’ll explain why and show you how you can benefit from this to super-charge your design-to-code…",
+    "date": "2021-12-13T11:54:17.431Z"
+  },
+  {
+    "title": "Aligning type to baseline the right way using SASS — Typography — Medium",
+    "url": "https://medium.com/typography/e258fce47a9b",
+    "tags": ["Design", "Vertical Rhythm"],
+    "description": "Typography is an important part of web design nowadays and free services like Google Web Fonts or Adobe’s Typekit make custom fonts on the web a commodity. Let’s take it slow and start with a core…",
+    "date": "2020-01-21T15:57:29.093Z"
+  },
+  {
+    "title": "The Grid System » golden ratio",
+    "url": "http://www.thegridsystem.org/tags/golden-ratio/",
+    "tags": ["Design", "Goldern Ratio"]
+  },
+  {
+    "title": "A badass list of frontend development resources I collected over time.",
+    "url": "https://gist.github.com/dypsilon/5819504",
+    "tags": ["Frontend"],
+    "description": "A badass list of frontend development resources I collected over time. - frontendDevlopmentBookmarks.md"
+  },
+  {
+    "title": "Design Systems For Figma",
+    "url": "https://www.designsystemsforfigma.com/",
+    "tags": ["Design Systems"],
+    "description": "A collection of Design Systems for Figma from all over the globe."
+  },
+  {
+    "title": "Modeling Physics in Javascript: Gravity and Drag",
+    "url": "https://burakkanber.com/blog/modeling-physics-javascript-gravity-and-drag/",
+    "tags": ["Animation", "Spring"],
+    "description": "This is the first post in the Modeling Physics in Javascript series. As such, we'll need to cover some introductory material. There are some of you who have real training in physics and calculus. You may be tempted to scream &quot;that's not the whole story&quot; at me when",
+    "date": "2017-03-27T14:20:29.000Z"
+  },
+  {
+    "title": "Component Tokens & Themes Example [learn Figma Tokens] – Figma",
+    "url": "https://www.figma.com/community/file/1077953107713783283",
+    "tags": ["Design Systems"],
+    "description": "Learn how to build a theme-able or multi-brand design system using Figma Tokens with component specific tokens and multiple semantic layers.\n\nIncluded in this file:\nOne component with component based design tokens2 semantic/theme layers (light/dark mode)A core token layer with option tokensA work..."
+  },
+  {
+    "title": "4 ways to create CSS that's modular and scalable",
+    "url": "https://www.creativebloq.com/css3/create-modular-and-scalable-css-9134351",
+    "tags": ["CSS"],
+    "description": "Modular code is reusable code. It can be combined in a variety of ways, making it flexible and scalable, allowing you to iterate code blocks independently and leading to better performance and more ma"
+  },
+  {
+    "title": "What is TypeScript?",
+    "url": "https://learntypescript.dev/01/l1-what-is-ts",
+    "tags": ["Typescript", "Learn"],
+    "description": "What TypeScript is, what its purpose is, why should we use it and what its usage is today"
+  },
+  {
+    "title": "Placeholder Components — Editable components without detaching in Figma - YouTube",
+    "url": "https://www.youtube.com/watch?v=gS-MvibsunE&ab_channel=TheFunofIterating",
+    "tags": ["Figma"],
+    "description": "💡 Be sure to check out a follow-up bonus episode on Placeholder Component's younger cousin: a Boilerplate Component — https://youtu.be/kVZw-97tklAFigma Comm..."
+  },
+  {
+    "title": "Overreacted — A blog by Dan Abramov",
+    "url": "https://overreacted.io/",
+    "tags": ["Blogs"],
+    "description": "Personal blog by Dan Abramov. I explain with words and code."
+  },
+  {
+    "title": "Learn immutability with JavaScript",
+    "url": "https://medium.com/@cristiansalcescu/learn-immutability-with-javascript-6a67e4a48d7f#targetText=Immutability%20makes%20code%20easier%20to,reduce%20the%20area%20of%20surprise.",
+    "tags": ["Javascript", "Immutability"],
+    "description": "const vs freezing, adding, removing, editing and immutable plain object and array. “Learn immutability with JavaScript” is published by Cristian Salcescu in Frontend Essentials.",
+    "date": "2022-06-08T08:19:56.682Z"
+  },
+  {
+    "title": "Figma Tokens – Documentation",
+    "url": "https://docs.tokens.studio/",
+    "tags": ["Design Systems", "Figma Tokens"],
+    "description": "Figma Tokens: Plugin Docs"
+  },
+  {
+    "title": "Applying Mathematics To Web Design",
+    "url": "http://www.smashingmagazine.com/2010/02/09/applying-mathematics-to-web-design/",
+    "tags": ["Design", "Goldern Ratio"],
+    "description": "“Mathematics is beautiful.” This may sound absurd to people who wince at numbers and equations. But some of the most beautiful things in nature and our universe exhibit mathematical properties, from the smallest seashell to the biggest whirlpool galaxies. In fact, one of the greatest ancient philosophers, Aristotle, said: “The mathematical sciences particularly exhibit order, symmetry and limitation; and these are the greatest forms of the beautiful.”"
+  },
+  {
+    "title": "Fastdom - Eliminates layout thrashing by batching DOM measurement and mutation tasks",
+    "url": "https://github.com/wilsonpage/fastdom",
+    "tags": ["Animation", "Layout Trashing"],
+    "description": "Eliminates layout thrashing by batching DOM measurement and mutation tasks - GitHub - wilsonpage/fastdom: Eliminates layout thrashing by batching DOM measurement and mutation tasks"
+  },
+  {
+    "title": "LukeW",
+    "url": "http://www.lukew.com/ff/entry.asp?933",
+    "tags": ["Responsive"],
+    "description": "LukeW Ideation + Design provides resources for mobile and Web product design and strategy including presentations, workshops, articles, books and more on usability, interaction design and visual design."
+  },
+  {
+    "title": "CSS with vertical rhythm",
+    "url": "http://drewish.com/tools/vertical-rhythm/",
+    "tags": ["Responsive"],
+    "description": "eating my own dog food"
+  },
+  {
+    "title": "seanconnollydev/style-dictionary-material-ui: Prototype for style-dictionary, storybook and material-ui.",
+    "url": "https://github.com/seanconnollydev/style-dictionary-material-ui",
+    "tags": ["Design Systems", "Style Dictionary"],
+    "description": "Prototype for style-dictionary, storybook and material-ui. - GitHub - seanconnollydev/style-dictionary-material-ui: Prototype for style-dictionary, storybook and material-ui."
+  },
+  {
+    "title": "Modular CSS naming conventions",
+    "url": "http://thesassway.com/advanced/modular-css-naming-conventions",
+    "tags": ["CSS"]
+  },
+  {
+    "title": "Preventing 'layout thrashing'",
+    "url": "http://wilsonpage.co.uk/preventing-layout-thrashing/",
+    "tags": ["Animation", "rAF"],
+    "description": "Layout Thrashing occurs when JavaScript violently writes, then reads, from the DOM, multiple times causing document reflows.\n\n "
+  },
+  {
+    "title": "A Beginner's Guide to Pairing Fonts",
+    "url": "http://webdesign.tutsplus.com/articles/typography-articles/a-beginners-guide-to-pairing-fonts/",
+    "tags": ["Design", "Fonts"],
+    "description": "\nPairing fonts can be a challenge. Selecting two or more fonts which work well is one thing - selecting two which work together to achieve your typographic aims may have you reaching for the...",
+    "date": "2012-11-26 12:00:29 UTC"
+  },
+  {
+    "title": "Designing Hazel's Accessible Color System (Part 1)",
+    "url": "https://medium.com/@thisisfranciswu/designing-hazels-accessible-color-system-part-1-8a73a2298c35",
+    "tags": ["Design Systems"],
+    "description": "There’s no shortage of articles and videos about designing UI color palettes. You can even use a tool such as Material Design’s Color Tool to create an exhaustive set of harmonious colors. But when…",
+    "date": "2022-03-26T02:17:28.421Z"
+  },
+  {
+    "title": "Website dimensions",
+    "url": "http://www.websitedimensions.com/",
+    "tags": ["Responsive"],
+    "description": "After 20 years in webdesign the time has come for me to pass my knowledge on to you. Find yourself a comfortable armchair and enjoy."
+  },
+  {
+    "title": "MostlyAdequate/mostly-adequate-guide: Mostly adequate guide to FP (in javascript)",
+    "url": "https://github.com/MostlyAdequate/mostly-adequate-guide",
+    "tags": ["Javascript", "Functional Programming"],
+    "description": "Mostly adequate guide to FP (in javascript). Contribute to MostlyAdequate/mostly-adequate-guide development by creating an account on GitHub."
+  },
+  {
+    "title": "Clean architecture for the rest of us",
+    "url": "https://pusher.com/tutorials/clean-architecture-introduction",
+    "tags": ["Frontend"],
+    "description": "This article introduces the concept of clean architecture, based on Robert Martin&#39;s book of the same name. It provides an introductory-level overview of key concepts and practices, with accessible examples and suggestions for exercises and further learning."
+  },
+  {
+    "title": "DrawKit - Beautiful free illustrations",
+    "url": "https://www.drawkit.io/",
+    "tags": ["Design", "UI Kits"],
+    "description": "Free and premium vector SVG illustrations for you to use on your next project, no attribution required! Vector illustrations, icons, 3D illustrations, animation and more."
+  },
+  {
+    "title": "Links must have discernible text Axe Rules",
+    "url": "https://dequeuniversity.com/rules/axe/3.3/link-title",
+    "tags": ["Frontend", "Accessibility", "Web Standards"]
+  },
+  {
+    "title": "Simple Easing Functions in Javascript",
+    "url": "https://gist.github.com/gre/1650294",
+    "tags": ["Animation", "Easing functions"],
+    "description": "Simple Easing Functions in Javascript - see https://github.com/gre/bezier-easing - easing.js"
+  },
+  {
+    "title": "Leo Gardiner on Behance",
+    "url": "https://www.behance.net/woaitsleoc264/appreciated",
+    "tags": ["Design", "Inspiration", "3D"],
+    "description": "Leo Gardiner on Behance"
+  },
+  {
+    "title": "Tools",
+    "url": "http://styleguides.io/tools.html",
+    "tags": ["Design Systems", "Tools"],
+    "description": "A collaborative collection of resources for creating Front-End Style Guides and Pattern Libraries"
+  },
+  {
+    "title": "Component Spec Tool",
+    "url": "https://www.figma.com/community/file/1084193931826755668",
+    "tags": ["Design Systems", "Figma"],
+    "description": "Welcome to the Component Spec Tool, a library file built to help ease the design-to-engineering handoff related to design systems component work.\n\nSome key features include:&nbsp;\n✅ Installable without any dependencies\n✅ View-only access ready!\n❌ Not a Plugin or 3rd-party integration\n✅ Customizab..."
+  },
+  {
+    "title": "divriots/style-dictionary-to-figma: A utility that mutates and transforms a style-dictionary object into something Figma Tokens plugin understands",
+    "url": "https://github.com/divriots/style-dictionary-to-figma",
+    "tags": ["Design Systems", "Figma", "Style Dictionary"],
+    "description": "A utility that mutates and transforms a style-dictionary object into something Figma Tokens plugin understands. - GitHub - divriots/style-dictionary-to-figma: A utility that mutates and transforms a style-dictionary object into something Figma Tokens plugin understands."
+  },
+  {
+    "title": "easings.js/easings.js at master · iamso/easings.js",
+    "url": "https://github.com/iamso/easings.js/blob/master/src/easings.js",
+    "tags": ["Animation", "Easing functions"],
+    "description": "Javascript easing functions. Taken from here: https://gist.github.com/rezoner/713615dabedb59a15470 - easings.js/easings.js at master · iamso/easings.js"
+  },
+  {
+    "title": "Understanding \"this\" in JavaScript",
+    "url": "https://www.codementor.io/dariogarciamoya/understanding--this--in-javascript-du1084lyn",
+    "tags": ["Javascript", "this"],
+    "description": "When a function is created, a keyword called \"this\" is created, which links to the object in which the function operates. Many people get confused with \"this\"—let's clear up the confusion."
+  },
+  {
+    "title": "Red Bead Experiment with Dr. W. Edwards Deming - YouTube",
+    "url": "https://www.youtube.com/watch?v=ckBfbvOXDvU",
+    "tags": ["Leadership"],
+    "description": "Excerpts from the Deming Library: Red Bead Experiment video.  See more on our blog post:   http://blog.deming.org/2014/02/deming-red-bead-experiment/"
+  },
+  {
+    "title": "Designing with tokens for a flexible multi-brand design",
+    "url": "https://clearleft.com/posts/designing-with-tokens-for-a-flexible-multi-brand-design-system",
+    "tags": ["Design Systems"],
+    "description": "There’s an ever growing battle between efficiency and flexibility. How do you deliver an efficient white label product experience while allowing the…"
+  },
+  {
+    "title": "easing-js/easing.js at master · danro/easing-js",
+    "url": "https://github.com/danro/easing-js/blob/master/easing.js",
+    "tags": ["Animation", "Easing functions"],
+    "description": "Generic set of easing functions with AMD support. Contribute to danro/easing-js development by creating an account on GitHub."
+  },
+  {
+    "title": "Understanding \"this\" in javascript with arrow functions",
+    "url": "https://www.codementor.io/dariogarciamoya/understanding-this-in-javascript-with-arrow-functions-gcpjwfyuc",
+    "tags": ["Javascript", "this"],
+    "description": "Javascript good practices. Understanding scope in javascript"
+  },
+  {
+    "title": "Discrete Mathematics with Applications: Susanna S. Epp: 9780495391326: Amazon.com: Books",
+    "url": "https://www.amazon.com/Discrete-Mathematics-Applications-Susanna-Epp/dp/0495391328",
+    "tags": ["Javascript", "ES6"]
+  },
+  {
+    "title": "Cool Tricks with Animations Using requestAnimationFrame",
+    "url": "https://yeti.co/blog/cool-tricks-with-animating-using-requestanimationframe/",
+    "tags": ["Animation", "rAF"],
+    "description": "This function is built-in to many modern browsers and is an API that enables developers to script animations by essentially \"painting\" the desired styles one frame at a time, and then calling itself to paint the next frame."
+  },
+  {
+    "title": "The Purpose of Code - Simple Programmer",
+    "url": "https://simpleprogrammer.com/there-are-only-two-roles-of-code/",
+    "tags": ["Testing", "Unit Testing"],
+    "description": "The purpose of code can be classified into two distinct roles; code that does work (algorithms) and code that coordinates work (coordinators)."
+  },
+  {
+    "title": "React vs SolidJS, Fight! - YouTube",
+    "url": "https://www.youtube.com/watch?v=OqcHoLWyyIw",
+    "tags": ["React", "SolidJS"],
+    "description": "Let's compare React with the upstart newcomer Solid-JS in an eCommerce showdown!00:00 Introduction01:31 Project introduction02:45 Project setup04:42 Creating..."
+  },
+  {
+    "title": "Color wheel",
+    "url": "https://kuler.adobe.com/create/color-wheel/",
+    "tags": ["Design", "Colors"]
+  },
+  {
+    "title": "Prototypes in JavaScript - Better Programming - Medium",
+    "url": "https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b#targetText=When%20a%20function%20is%20created,prototype%20object%20is%20a%20property.",
+    "tags": ["Javascript", "Prototypes"]
+  },
+  {
+    "title": "Neumorphism in user interfaces - UX Collective",
+    "url": "https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6",
+    "tags": ["Design", "Trends"]
+  },
+  {
+    "title": "How to use Tail Call Optimizations in JavaScript",
+    "url": "https://javascript.plainenglish.io/javascript-optimizations-tail-call-optimization-tco-471b4f8e4f37",
+    "tags": ["Performance"]
+  },
+  {
+    "title": "Trending Programming Tips - Trending Tips",
+    "url": "https://coderwall.com/trending",
+    "tags": ["Frontend"],
+    "description": "Programming tips, tools, and projects from our developer community. A collaborative learning platform for software developers.",
+    "date": "2022-06-01 09:30:45 UTC"
+  },
+  {
+    "title": "The Practical Guide to Naming Design Tokens",
+    "url": "https://uxdesign.cc/naming-design-tokens-9454818ed7cb",
+    "tags": ["Design Systems"]
+  },
+  {
+    "title": "Flexible data tables with CSS Grid",
+    "url": "https://adamlynch.com/flexible-data-tables-with-css-grid/?1#toggling-columns",
+    "tags": ["CSS"],
+    "description": "Now that we've launched, I can finally talk about the secret project I've been working on for the last two years. One interesting piece of the Teamwork CRM puzzle was the &quot;list view&quot;.\nIt's a powerful page component which exists seven times in the app — a table on steroids essentially. I could talk about it for days but I won't bore you. I'll focus on how we added a lot of flexibility with a few lines of CSS (Grid). Namely, how we lay out data-heavy tables, how we support resizing of columns, and more.\n"
+  },
+  {
+    "title": "Codrops",
+    "url": "https://tympanus.net",
+    "tags": ["Frontend", "News"],
+    "description": "Creative front-end resources and inspiration for web professionals"
+  },
+  {
+    "title": "Using ES6 modules today",
+    "url": "https://ferdychristant.com/using-es6-modules-today-734a347d80a7",
+    "tags": ["Javascript", "ES6"]
+  },
+  {
+    "title": "Write better JavaScript, function composition with pipe and compose",
+    "url": "https://itnext.io/write-better-javascript-function-composition-with-pipe-and-compose-93cc39ab16ee",
+    "tags": ["Javascript", "Functional Programming"]
   }
 ]

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import itemsJsPackage from "itemsjs";
 import data from "./data.json";
 import { AppContainer } from "./components/AppContainer";
@@ -10,6 +10,8 @@ import {
 import { ItemsList } from "./components/ItemsList";
 import { SearchBar } from "./components/SearchBar";
 import { Tags } from "./components/Tags";
+import { BookmarksSheet } from "./components/BookmarksSheet";
+import { Hello } from "./components/Hello";
 
 const itemsJsConfig = {
   sortings: {
@@ -21,95 +23,86 @@ const itemsJsConfig = {
   aggregations: {
     tags: {
       name: "Tags",
-      size: 10,
       conjunction: false,
     },
   },
   searchableFields: ["title"],
 };
 
-const PER_PAGE = 10;
+const PER_PAGE = 100;
 
 const DEFAULT_SEARCH = {
   per_page: PER_PAGE,
   sort: "title_asc",
 };
 
+const MAIN_TAGS = [
+  "Pinned",
+  "Frontend",
+  "UI",
+  "React",
+  "Javascript",
+  "CSS",
+  "Design Systems",
+  "Testing",
+  "Performance",
+  "Animation",
+  "Inspiration",
+];
+
+const getCategoryTags = (tags) => {
+  return MAIN_TAGS.map((key) => ({
+    key,
+    doc_count: tags.find((it) => it.key === key)?.doc_count || 0,
+  }));
+};
+
 export const App = () => {
-  const [items, setItems] = React.useState([]);
-  const [search, setSearch] = React.useState("");
-  const [tags, setTags] = React.useState([]);
-  const [selectedTags, setSelectedTags] = React.useState([]);
-  const { current: itemsJS } = React.useRef(
-    itemsJsPackage(data, itemsJsConfig)
-  );
+  const [items, setItems] = useState([]);
+  const [search, setSearch] = useState("");
+  const [tags, setTags] = useState([]);
+  const [selectedTag, setSelectedTag] = useState("Pinned");
+  const { current: itemsJS } = useRef(itemsJsPackage(data, itemsJsConfig));
 
-  // React.useEffect(() => {
-  //   if (!itemsJS) return;
-
-  //   const query = itemsJS.search({
-  //     ...DEFAULT_SEARCH,
-  //     // full text search
-  //     // query: 'forrest gump',
-  //     // filters: {
-  //     //   tags: ["tag 1"],
-  //     // },
-  //   });
-
-  //   setItems(query.data.items);
-  // }, [itemsJS.current]);
-
-  React.useEffect(() => {
+  useEffect(() => {
     if (!itemsJS) return;
 
-    const query = itemsJS.search({
+    const searchQuery = itemsJS.search({
       ...DEFAULT_SEARCH,
-      query: search || undefined,
+      query: search,
       filters: {
-        tags: selectedTags,
+        tags: [selectedTag],
       },
     });
 
-    console.log(search);
+    setItems(searchQuery.data.items);
 
-    setItems(query.data.items);
-  }, [search, selectedTags.length]);
-
-  React.useEffect(() => {
-    if (!itemsJS) return;
-
-    const query = itemsJS.aggregation({
+    const tagsQuery = itemsJS.aggregation({
       name: "tags",
       per_page: 100,
       query: search,
     });
 
-    setTags(query.data.buckets);
+    setTags(getCategoryTags(tagsQuery.data.buckets));
+  }, [search, selectedTag]);
+
+  useEffect(() => {
+    if (!itemsJS) return;
   }, [search]);
-
-  const onSelectTag = (tag) => {
-    if (selectedTags.includes(tag)) {
-      setSelectedTags(selectedTags.filter((it) => it !== tag));
-    } else {
-      setSelectedTags([...selectedTags, tag]);
-    }
-  };
-
-  const clearTags = () => {
-    setSelectedTags([]);
-  };
 
   return (
     <AppContainer>
       <PageContainer>
         <PageSidebar>
-          <SearchBar search={search} setSearch={setSearch} />
-          <Tags
-            tags={tags}
-            selectedTags={selectedTags}
-            onSelectTag={onSelectTag}
-            clearTags={clearTags}
-          />
+          <Hello />
+          <BookmarksSheet>
+            <Tags
+              tags={tags}
+              setSelectedTag={setSelectedTag}
+              selectedTag={selectedTag}
+            />
+            <SearchBar search={search} setSearch={setSearch} />
+          </BookmarksSheet>
         </PageSidebar>
         <PageContent>
           <ItemsList items={items} />
