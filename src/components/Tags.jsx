@@ -17,7 +17,7 @@ export const Tags = ({ tags, selectedTag, setSelectedTag }) => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        my: 3,
+        mb: 3,
       }}
     >
       <Box sx={{ m: -0.5 }}>

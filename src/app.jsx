@@ -12,6 +12,7 @@ import { SearchBar } from "./components/SearchBar";
 import { Tags } from "./components/Tags";
 import { BookmarksSheet } from "./components/BookmarksSheet";
 import { Hello } from "./components/Hello";
+import MAIN_TAGS from "./tags.json";
 
 const itemsJsConfig = {
   sortings: {
@@ -35,20 +36,6 @@ const DEFAULT_SEARCH = {
   per_page: PER_PAGE,
   sort: "title_asc",
 };
-
-const MAIN_TAGS = [
-  "Pinned",
-  "Frontend",
-  "UI",
-  "React",
-  "Javascript",
-  "CSS",
-  "Design Systems",
-  "Testing",
-  "Performance",
-  "Animation",
-  "Inspiration",
-];
 
 const getCategoryTags = (tags) => {
   return MAIN_TAGS.map((key) => ({

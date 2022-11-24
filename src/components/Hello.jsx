@@ -1,8 +1,6 @@
 import React from "react";
 import Typography from "@mui/joy/Typography";
 import Box from "@mui/joy/Box";
-import Link from "@mui/joy/Link";
-
 import { Logo } from "./Logo";
 import { useTheme } from "@mui/joy/styles";
 
@@ -20,6 +18,11 @@ export const Hello = () => {
       <Typography level="body2" sx={{ mb: 2 }}>
         Hi! My name is Dimitar Slaev. <br />
         Front-end developer, father, and foo!
+      </Typography>
+
+      <Typography level="body2" sx={{ mb: 2 }}>
+        I have no time to write, but I bookmark articles by people who know
+        their craft.
       </Typography>
     </Box>
   );

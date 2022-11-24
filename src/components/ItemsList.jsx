@@ -9,7 +9,7 @@ import Box from "@mui/joy/Box";
 export const ItemsList = ({ items }) => (
   <List sx={{ mt: -1.5 }}>
     {items.map((item, i) => (
-      <ListItem key={`item-${i}`} sx={{ mb: 2 }}>
+      <ListItem key={`item-${i}`} sx={{ mb: 4 }}>
         <ListItemContent>
           <Link
             href={item.url}
@@ -20,10 +20,13 @@ export const ItemsList = ({ items }) => (
           >
             {item.title}
           </Link>
-          <Box color="text.secondary">{item.tags.join(", ")}</Box>
+
+          <Typography level="body3" mb={1}>
+            {item.tags.join(", ")}
+          </Typography>
 
           {item.description && (
-            <Typography variant="body2">{item.description}</Typography>
+            <Typography level="body1">{item.description}</Typography>
           )}
         </ListItemContent>
       </ListItem>
