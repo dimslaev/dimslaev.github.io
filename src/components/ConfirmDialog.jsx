@@ -25,7 +25,6 @@ export const ConfirmDialog = ({
           borderRadius: "md",
           p: 3,
           boxShadow: "lg",
-          fontFamily: "sans-serif",
         }}
       >
         <Typography component="h2" level="h4" mb="1rem">

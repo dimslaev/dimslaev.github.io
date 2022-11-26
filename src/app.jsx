@@ -55,6 +55,7 @@ const getCategoryTags = (tags) => {
 };
 
 export const App = () => {
+  const [theme, setTheme] = React.useState("dark");
   const [data, setData] = React.useState([]);
   const [items, setItems] = React.useState([]);
   const [search, setSearch] = React.useState("");
@@ -170,18 +171,19 @@ export const App = () => {
   }, [search]);
 
   return (
-    <AppContainer>
+    <AppContainer theme={theme} setTheme={setTheme}>
       <PageContainer>
         <PageSidebar>
           <Stack spacing={3}>
-            <Hello />
+            <Hello theme={theme} />
             <BookmarksSheet>
+              <SearchBar search={search} setSearch={setSearch} />
+
               <Tags
                 tags={tags}
                 setSelectedTag={setSelectedTag}
                 selectedTag={selectedTag}
               />
-              <SearchBar search={search} setSearch={setSearch} />
             </BookmarksSheet>
           </Stack>
         </PageSidebar>

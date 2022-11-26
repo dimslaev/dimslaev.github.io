@@ -3,7 +3,6 @@ import TextField from "@mui/joy/TextField";
 import IconButton from "@mui/joy/IconButton";
 import CloseIcon from "@mui/icons-material/HighlightOff";
 import Box from "@mui/joy/Box";
-import Typography from "@mui/joy/Typography";
 
 // Hook
 const useDebounce = (value, delay = 100) => {
@@ -42,9 +41,6 @@ export const SearchBar = ({ search, setSearch }) => {
 
   return (
     <Box>
-      <Typography level="h6" sx={{ mb: 1 }}>
-        Search
-      </Typography>
       <TextField
         placeholder="Search"
         onChange={onChange}
@@ -64,6 +60,9 @@ export const SearchBar = ({ search, setSearch }) => {
         }
         sx={{
           width: 232,
+          "& .JoyInput-root": {
+            background: "transparent!important",
+          },
         }}
       />
     </Box>
