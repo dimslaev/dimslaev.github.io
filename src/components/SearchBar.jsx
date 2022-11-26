@@ -2,6 +2,8 @@ import React from "react";
 import TextField from "@mui/joy/TextField";
 import IconButton from "@mui/joy/IconButton";
 import CloseIcon from "@mui/icons-material/HighlightOff";
+import Box from "@mui/joy/Box";
+import Typography from "@mui/joy/Typography";
 
 // Hook
 const useDebounce = (value, delay = 100) => {
@@ -39,26 +41,31 @@ export const SearchBar = ({ search, setSearch }) => {
   );
 
   return (
-    <TextField
-      placeholder="Search"
-      onChange={onChange}
-      value={searchTerm}
-      size="sm"
-      endDecorator={
-        searchTerm && (
-          <IconButton
-            onClick={() => {
-              setSearch("");
-              setSearchTerm("");
-            }}
-          >
-            <CloseIcon />
-          </IconButton>
-        )
-      }
-      sx={{
-        width: 232,
-      }}
-    />
+    <Box>
+      <Typography level="h6" sx={{ mb: 1 }}>
+        Search
+      </Typography>
+      <TextField
+        placeholder="Search"
+        onChange={onChange}
+        value={searchTerm}
+        size="sm"
+        endDecorator={
+          searchTerm && (
+            <IconButton
+              onClick={() => {
+                setSearch("");
+                setSearchTerm("");
+              }}
+            >
+              <CloseIcon />
+            </IconButton>
+          )
+        }
+        sx={{
+          width: 232,
+        }}
+      />
+    </Box>
   );
 };

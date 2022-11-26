@@ -3,7 +3,24 @@ import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
 import Box from "@mui/joy/Box";
 
-const theme = extendTheme({});
+const theme = extendTheme({
+  components: {
+    JoyModalDialog: {
+      defaultProps: {
+        layout: "top",
+      },
+      styleOverrides: {
+        root: ({ ownerState }) => ({
+          ...(ownerState.layout === "top" && {
+            top: "12vh",
+            left: "50%",
+            transform: "translateX(-50%)",
+          }),
+        }),
+      },
+    },
+  },
+});
 
 export const AppContainer = ({ children }) => (
   <CssVarsProvider

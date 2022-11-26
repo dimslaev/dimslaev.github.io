@@ -1,6 +1,6 @@
 import React from "react";
-import Typography from "@mui/joy/Typography";
 import Sheet from "@mui/joy/Sheet";
+import Stack from "@mui/joy/Stack";
 
 export const BookmarksSheet = ({ children }) => {
   return (
@@ -12,10 +12,7 @@ export const BookmarksSheet = ({ children }) => {
         borderRadius: 4,
       }}
     >
-      <Typography level="h5" sx={{ mb: 2 }}>
-        Resources
-      </Typography>
-      {children}
+      <Stack spacing={2}>{children}</Stack>
     </Sheet>
   );
 };

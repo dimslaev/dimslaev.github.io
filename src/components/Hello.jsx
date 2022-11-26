@@ -20,7 +20,7 @@ export const Hello = () => {
         Front-end developer, father, and foo!
       </Typography>
 
-      <Typography level="body2" sx={{ mb: 2 }}>
+      <Typography level="body2">
         I have no time to write, but I bookmark articles by people who know
         their craft.
       </Typography>

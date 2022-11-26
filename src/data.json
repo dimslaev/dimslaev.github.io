@@ -1,5 +1,16 @@
 [
   {
+    "url": "https://blog.alexmaccaw.com/the-six-principles-of-lifestyle-businesses/",
+    "tags": ["Pinned", "Startups"],
+    "description": "Let's talk about what makes a great lifestyle business.",
+    "date": "2021-03-25T20:27:57.000Z"
+  },
+  {
+    "url": "https://render.com/",
+    "tags": ["Pinned", "Tools"],
+    "description": "Render is a unified cloud to build and run all your apps and websites with free TLS certificates, global CDN, private networks and auto deploys from Git."
+  },
+  {
     "title": "Selective Unit Testing – Costs and Benefits",
     "url": "http://blog.stevensanderson.com/2009/11/04/selective-unit-testing-costs-and-benefits/",
     "tags": ["Testing", "Unit Testing"],
