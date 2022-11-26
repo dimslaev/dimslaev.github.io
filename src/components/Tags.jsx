@@ -14,10 +14,6 @@ export const Count = ({ count }) => {
 export const Tags = ({ tags, selectedTag, setSelectedTag }) => {
   return (
     <Box>
-      <Typography level="h6" sx={{ mb: 1 }}>
-        Tags
-      </Typography>
-
       <Box sx={{ mx: -0.5 }}>
         {tags.map((tag, i) => {
           return (
@@ -28,7 +24,7 @@ export const Tags = ({ tags, selectedTag, setSelectedTag }) => {
               onClick={() =>
                 setSelectedTag(selectedTag === tag.key ? undefined : tag.key)
               }
-              color={tag.key === selectedTag ? "info" : "neutral"}
+              color={tag.key === selectedTag ? "primary" : "neutral"}
               variant={tag.key === selectedTag ? "solid" : "outlined"}
               endDecorator={<Count count={tag.doc_count} />}
             >

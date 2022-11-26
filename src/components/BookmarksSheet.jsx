@@ -6,10 +6,12 @@ export const BookmarksSheet = ({ children }) => {
   return (
     <Sheet
       sx={{
-        p: 2,
+        // p: 2,
         position: "sticky",
         top: 0,
         borderRadius: 4,
+        // bgcolor: "background.sheet",
+        background: "none",
       }}
     >
       <Stack spacing={2}>{children}</Stack>

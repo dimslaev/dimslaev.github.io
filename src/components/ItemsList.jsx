@@ -32,46 +32,17 @@ export const ItemsList = ({
           variant="outlined"
           sx={{
             overflow: "hidden",
-            bgcolor: "background.body",
-            minWidth: 240,
-            borderRadius: "sm",
-            boxShadow: "sm",
+            border: 0,
             py: 0,
-            "--List-item-paddingLeft": "1.5rem",
-            "--List-item-paddingRight": "1rem",
+            "--List-item-paddingLeft": "1rem",
+            "--List-item-paddingRight": "7rem",
           }}
           onMouseLeave={onMouseLeave}
         >
+          <ListDivider sx={{ my: 0 }} />
           {items.map((item, i) => (
             <>
-              <ListItem
-                key={`item-${i}`}
-                onMouseEnter={onMouseEnter(i)}
-                endAction={
-                  actionsIndex == i && (
-                    <Stack spacing={1} direction="row">
-                      <IconButton
-                        size="sm"
-                        color="info"
-                        onClick={() => {
-                          onEdit(item);
-                        }}
-                      >
-                        <EditIcon />
-                      </IconButton>
-                      <IconButton
-                        size="sm"
-                        color="info"
-                        onClick={() => {
-                          onDelete(item);
-                        }}
-                      >
-                        <DeleteIcon />
-                      </IconButton>
-                    </Stack>
-                  )
-                }
-              >
+              <ListItem key={`item-${i}`} onMouseEnter={onMouseEnter(i)}>
                 <ListItemButton
                   href={item.url}
                   component="a"
@@ -79,28 +50,66 @@ export const ItemsList = ({
                   rel="noopener noreferrer"
                   sx={{ display: "block", py: 3 }}
                 >
-                  <Stack spacing={2} direction="row" alignItems="center">
+                  <Stack
+                    spacing={2}
+                    direction="row"
+                    alignItems="center"
+                    // justifyContent="space-between"
+                  >
                     <Typography
                       level="h6"
                       target="_blank"
                       rel="noopener noreferrer"
-                      color="text.primary"
                     >
                       {item.title}
                     </Typography>
-                    <Typography level="body3" mb={1}>
+                    <Typography
+                      level="body3"
+                      mb={1}
+                      sx={{
+                        textAlign: "right",
+                        color: "var(--joy-palette-primary-400)",
+                      }}
+                    >
                       {item.tags?.join(", ")}
                     </Typography>
                   </Stack>
                 </ListItemButton>
+                {actionsIndex == i && (
+                  <Stack
+                    spacing={1}
+                    direction="row"
+                    sx={{ position: "absolute", right: "1rem" }}
+                  >
+                    <IconButton
+                      size="sm"
+                      variant="soft"
+                      onClick={() => {
+                        onEdit(item);
+                      }}
+                    >
+                      <EditIcon />
+                    </IconButton>
+                    <IconButton
+                      size="sm"
+                      variant="soft"
+                      onClick={() => {
+                        onDelete(item);
+                      }}
+                    >
+                      <DeleteIcon />
+                    </IconButton>
+                  </Stack>
+                )}
               </ListItem>
-              {i < items.length - 1 && <ListDivider sx={{ my: 0 }} />}
+              <ListDivider sx={{ my: 0 }} />
             </>
           ))}
         </List>
         <Button
           variant="outlined"
           color="neutral"
+          sx={{ border: 0 }}
           onClick={() => {
             setAddItemDialogOpen(true);
           }}

@@ -20,7 +20,7 @@ export const FormDialog = ({
 
   React.useEffect(() => {
     formData.current = initialData;
-  }, [Object.keys(initialData).length]);
+  }, [initialData, Object.keys(initialData).length]);
 
   const onChange = (e) => {
     formData.current[e.target.name] = e.target.value;
@@ -43,7 +43,6 @@ export const FormDialog = ({
           borderRadius: "md",
           p: 3,
           boxShadow: "lg",
-          fontFamily: "sans-serif",
         }}
       >
         <Typography component="h2" level="h4" mb="1rem">
