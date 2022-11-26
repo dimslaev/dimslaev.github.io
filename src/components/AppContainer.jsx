@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
 import Box from "@mui/joy/Box";

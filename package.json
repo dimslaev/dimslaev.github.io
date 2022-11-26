@@ -2,7 +2,6 @@
   "name": "dimslaev.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -22,7 +21,7 @@
   "source": "src/index.pug",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --dist-dir='./' --no-source-maps"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "repository": {

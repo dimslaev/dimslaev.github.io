@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Sheet from "@mui/joy/Sheet";
 import Stack from "@mui/joy/Stack";
 

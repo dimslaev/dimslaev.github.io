@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Box from "@mui/joy/Box";
 import Chip from "@mui/joy/Chip";
 import Typography from "@mui/joy/Typography";

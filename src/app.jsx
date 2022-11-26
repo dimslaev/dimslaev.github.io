@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import * as React from "react";
 import itemsJsPackage from "itemsjs";
 import { AppContainer } from "./components/AppContainer";
 import {
@@ -13,8 +13,6 @@ import { BookmarksSheet } from "./components/BookmarksSheet";
 import { Hello } from "./components/Hello";
 import { FormDialog } from "./components/FormDialog";
 import { ConfirmDialog } from "./components/ConfirmDialog";
-import Button from "@mui/joy/Button";
-import Add from "@mui/icons-material/Add";
 import Stack from "@mui/joy/Stack";
 
 import MAIN_TAGS from "./tags.json";
@@ -57,19 +55,19 @@ const getCategoryTags = (tags) => {
 };
 
 export const App = () => {
-  const [data, setData] = useState([]);
-  const [items, setItems] = useState([]);
-  const [search, setSearch] = useState("");
-  const [tags, setTags] = useState([]);
-  const [allTags, setAllTags] = useState([]);
-  const [selectedTag, setSelectedTag] = useState("Pinned");
-  const [addItemDialogOpen, setAddItemDialogOpen] = useState(false);
-  const [editItemDialogOpen, setEditItemDialogOpen] = useState(false);
-  const [deleteItemDialogOpen, setDeleteItemDialogOpen] = useState(false);
-  const [editItemInitialData, setEditItemInitialData] = useState({});
-  const [deleteItemData, setDeleteItemData] = useState(null);
+  const [data, setData] = React.useState([]);
+  const [items, setItems] = React.useState([]);
+  const [search, setSearch] = React.useState("");
+  const [tags, setTags] = React.useState([]);
+  const [allTags, setAllTags] = React.useState([]);
+  const [selectedTag, setSelectedTag] = React.useState("Pinned");
+  const [addItemDialogOpen, setAddItemDialogOpen] = React.useState(false);
+  const [editItemDialogOpen, setEditItemDialogOpen] = React.useState(false);
+  const [deleteItemDialogOpen, setDeleteItemDialogOpen] = React.useState(false);
+  const [editItemInitialData, setEditItemInitialData] = React.useState({});
+  const [deleteItemData, setDeleteItemData] = React.useState(null);
 
-  const itemsJS = useRef({});
+  const itemsJS = React.useRef({});
 
   const fetchData = () => {
     let req = new XMLHttpRequest();
@@ -138,9 +136,9 @@ export const App = () => {
     setDeleteItemData(item);
   };
 
-  useEffect(fetchData, []);
+  React.useEffect(fetchData, []);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (data.length === 0 || !itemsJS.current) return;
 
     const searchQuery = itemsJS.current.search({
@@ -163,8 +161,8 @@ export const App = () => {
     setAllTags(tagsQuery.data.buckets);
   }, [data.length, search, selectedTag]);
 
-  const previousSearchRef = useRef("");
-  useEffect(() => {
+  const previousSearchRef = React.useRef("");
+  React.useEffect(() => {
     if (search && search !== previousSearchRef.current && selectedTag) {
       previousSearchRef.current = search;
       setSelectedTag("");
