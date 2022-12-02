@@ -19,9 +19,9 @@ import MAIN_TAGS from "./tags.json";
 
 const itemsJsConfig = {
   sortings: {
-    title_asc: {
-      field: "title",
-      order: "asc",
+    likes_desc: {
+      field: "likes",
+      order: "desc",
     },
   },
   aggregations: {
@@ -37,7 +37,7 @@ const PER_PAGE = 100;
 
 const DEFAULT_SEARCH = {
   per_page: PER_PAGE,
-  sort: "title_asc",
+  sort: "likes_desc",
 };
 
 const initialItemData = {
@@ -45,6 +45,7 @@ const initialItemData = {
   url: "",
   description: "",
   tags: [],
+  likes: 0,
 };
 
 const getCategoryTags = (tags) => {
@@ -55,6 +56,7 @@ const getCategoryTags = (tags) => {
 };
 
 export const App = () => {
+  const [isAdmin, setIsAdmin] = React.useState(false);
   const [theme, setTheme] = React.useState("dark");
   const [data, setData] = React.useState([]);
   const [items, setItems] = React.useState([]);
@@ -68,16 +70,23 @@ export const App = () => {
   const [editItemInitialData, setEditItemInitialData] = React.useState({});
   const [deleteItemData, setDeleteItemData] = React.useState(null);
 
+  const [loadingListItems, setLoadingListItems] = React.useState([]);
+
+  const [updateCount, setUpdateCount] = React.useState(0);
+
   const itemsJS = React.useRef({});
 
   const fetchData = () => {
     let req = new XMLHttpRequest();
+
+    setLoadingListItems(true);
 
     req.onreadystatechange = () => {
       if (req.readyState == XMLHttpRequest.DONE) {
         const data = JSON.parse(req.responseText);
         itemsJS.current = itemsJsPackage(data, itemsJsConfig);
         setData(data);
+        setLoadingListItems(false);
       }
     };
 
@@ -107,9 +116,37 @@ export const App = () => {
     req.onreadystatechange = () => {
       if (req.readyState == XMLHttpRequest.DONE) {
         setData(newData);
+        setUpdateCount(updateCount + 1);
+
         itemsJS.current = itemsJsPackage(newData, itemsJsConfig);
       }
     };
+
+    req.open(
+      "PUT",
+      "https://api.jsonbin.io/v3/b/6381e5a165b57a31e6c4d3d9 ",
+      true
+    );
+
+    req.setRequestHeader("Content-Type", "application/json");
+
+    req.setRequestHeader(
+      "X-Master-Key",
+      "$2b$10$/K/4j.3Vui9Dih2bEbbs1OGQNd8gJJQ.sAXWkiW4OYMQPib4v5RcW"
+    );
+
+    req.send(JSON.stringify(newData));
+  };
+
+  const updateDataOnce = () => {
+    let req = new XMLHttpRequest();
+
+    const newData = data.map((it) => {
+      return {
+        ...it,
+        tags: it.tags || [],
+      };
+    });
 
     req.open(
       "PUT",
@@ -137,6 +174,11 @@ export const App = () => {
     setDeleteItemData(item);
   };
 
+  const onClickLikeItem = (item) => {
+    const n = item.likes || 0;
+    updateData({ ...item, likes: n + 1 });
+  };
+
   React.useEffect(fetchData, []);
 
   React.useEffect(() => {
@@ -160,7 +202,7 @@ export const App = () => {
 
     setTags(getCategoryTags(tagsQuery.data.buckets));
     setAllTags(tagsQuery.data.buckets);
-  }, [data.length, search, selectedTag]);
+  }, [data.length, search, selectedTag, updateCount]);
 
   const previousSearchRef = React.useRef("");
   React.useEffect(() => {
@@ -169,6 +211,17 @@ export const App = () => {
       setSelectedTag("");
     }
   }, [search]);
+
+  React.useEffect(() => {
+    const search = window.location.search;
+
+    if (
+      search.includes("time") &&
+      Date.parse(search.replace("?time=", "")) === 1597795200000
+    ) {
+      setIsAdmin(true);
+    }
+  }, []);
 
   return (
     <AppContainer theme={theme} setTheme={setTheme}>
@@ -190,9 +243,12 @@ export const App = () => {
         <PageContent>
           <ItemsList
             items={items}
+            loading={loadingListItems}
             onEdit={onClickEditItem}
             onDelete={onClickDeleteItem}
+            onLike={onClickLikeItem}
             setAddItemDialogOpen={setAddItemDialogOpen}
+            isAdmin={isAdmin}
           />
         </PageContent>
         <FormDialog
