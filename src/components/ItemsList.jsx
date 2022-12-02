@@ -59,6 +59,13 @@ export const ItemsList = ({
                     rel="noopener noreferrer"
                     sx={{ display: "block", py: 3 }}
                   >
+                    <Typography
+                      level="h5"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.title}
+                    </Typography>
                     <Stack
                       spacing={2}
                       direction="row"
@@ -66,15 +73,7 @@ export const ItemsList = ({
                       flexWrap="wrap"
                     >
                       <Typography
-                        level="h5"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {item.title}
-                      </Typography>
-                      <Typography
                         level="body3"
-                        mb={1}
                         sx={{
                           color: "var(--joy-palette-primary-400)",
                         }}

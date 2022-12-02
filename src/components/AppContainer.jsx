@@ -2,9 +2,9 @@ import * as React from "react";
 import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
 import Box from "@mui/joy/Box";
-import IconButton from "@mui/joy/IconButton";
-import LightIcon from "@mui/icons-material/LightMode";
-import DarkIcon from "@mui/icons-material/DarkMode";
+// import IconButton from "@mui/joy/IconButton";
+// import LightIcon from "@mui/icons-material/LightMode";
+// import DarkIcon from "@mui/icons-material/DarkMode";
 
 const purple = {
   50: "#FDF7FF",
@@ -84,7 +84,7 @@ export const AppContainer = ({ children, theme, setTheme }) => (
       }}
     >
       {children}
-      <IconButton
+      {/* <IconButton
         sx={{
           position: "fixed",
           left: "2.5rem",
@@ -96,7 +96,7 @@ export const AppContainer = ({ children, theme, setTheme }) => (
         }}
       >
         {theme === "dark" ? <LightIcon /> : <DarkIcon />}
-      </IconButton>
+      </IconButton> */}
     </Box>
   </CssVarsProvider>
 );
