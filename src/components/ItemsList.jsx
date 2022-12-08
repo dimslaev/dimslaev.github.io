@@ -40,6 +40,7 @@ export const ItemsList = ({
             overflow: "hidden",
             border: 0,
             py: 0,
+            mx: { xs: -2, md: 0 },
             "--List-item-paddingLeft": "1rem",
             "--List-item-paddingRight": "7rem",
           }}
@@ -63,6 +64,7 @@ export const ItemsList = ({
                       level="h5"
                       target="_blank"
                       rel="noopener noreferrer"
+                      mb={1}
                     >
                       {item.title}
                     </Typography>
