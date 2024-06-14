@@ -2,35 +2,12 @@
   "name": "dimslaev.github.io",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
-    "@mui/icons-material": "^5.10.15",
-    "@mui/joy": "^5.0.0-alpha.55",
-    "@mui/material": "^5.10.15",
-    "itemsjs": "^2.1.20",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@parcel/packager-raw-url": "2.8.0",
-    "@parcel/transformer-pug": "^2.8.0",
-    "@parcel/transformer-webmanifest": "2.8.0",
-    "parcel": "^2.8.0",
-    "process": "^0.11.10",
-    "url-metadata": "^2.5.0"
-  },
-  "source": "src/index.pug",
+  "dependencies": {},
   "scripts": {
     "start": "parcel",
     "build": "parcel build --dist-dir='./' --no-source-maps"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dimslaev/dimslaev.github.io.git"
-  },
-  "author": "",
+  "author": "Dimitar Slaev <dimslaev@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dimslaev/dimslaev.github.io/issues"
